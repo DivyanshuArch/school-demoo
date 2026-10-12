@@ -1,0 +1,972 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Meridian Crest Academy | Premier Day &amp; Boarding School</title>
+  <meta name="description" content="Meridian Crest Academy is a leading independent preparatory boarding and day school offering the IB Diploma, world-class facilities, and holistic education.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              950: '#060d17',
+              900: '#0b192e',
+              850: '#0f223f',
+              800: '#142c51',
+              700: '#1f3e6d',
+            },
+            gold: {
+              400: '#ebc853',
+              500: '#d8af3a',
+              600: '#b88f1d',
+            },
+            cream: {
+              50: '#fcfbf7',
+              100: '#f7f4ea',
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            crest: ['"Cinzel"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-[#FAF8F5] text-slate-800 antialiased selection:bg-amber-500 selection:text-white">
+
+  <!-- Simple Notice Bar -->
+  <aside aria-label="Admissions Banner" class="bg-navy-950 text-slate-300 py-2.5 px-4 text-xs sm:text-sm border-b border-navy-800">
+    <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-3">
+      <div class="flex items-center gap-2">
+        <span class="inline-flex items-center gap-1.5 px-2.5 py-0.5 rounded-full bg-amber-400 text-navy-950 font-bold text-[11px] tracking-wide uppercase">
+          Open Now
+        </span>
+        <span class="font-medium text-slate-200">Admissions for Academic Year 2027–2028 are now open.</span>
+        <a href="#admissions" class="underline underline-offset-4 text-amber-300 hover:text-white font-semibold">Learn More &rarr;</a>
+      </div>
+      <div class="hidden md:flex items-center gap-6 text-xs text-slate-400">
+        <span class="flex items-center gap-1.5"><i data-lucide="map-pin" class="w-3.5 h-3.5 text-amber-400"></i> Berkshire Hills Campus, MA</span>
+        <a href="tel:+18005550199" class="hover:text-amber-300 flex items-center gap-1.5 transition-colors">
+          <i data-lucide="phone" class="w-3.5 h-3.5 text-amber-400"></i> +1 (800) 555-0199
+        </a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- Main Navigation -->
+  <header id="main-header" class="sticky top-0 z-40 bg-navy-900/95 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20">
+        
+        <!-- School Crest & Brand -->
+        <a href="#home" class="flex items-center gap-3 group">
+          <div class="w-11 h-11 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 p-0.5 shadow-md group-hover:scale-105 transition-transform">
+            <div class="w-full h-full bg-navy-950 rounded-full flex items-center justify-center border border-amber-400/40">
+              <i data-lucide="shield" class="w-6 h-6 text-amber-400"></i>
+            </div>
+          </div>
+          <div>
+            <span class="block font-crest text-lg sm:text-xl font-bold tracking-wider text-white uppercase group-hover:text-amber-300 transition-colors">
+              Meridian Crest
+            </span>
+            <span class="block text-[11px] text-amber-400 tracking-widest uppercase font-serif italic">
+              Academy &bull; Est. 1894
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation Links -->
+        <nav class="hidden lg:flex items-center gap-7 text-sm font-medium text-slate-200">
+          <a href="#home" class="hover:text-amber-300 transition-colors">Home</a>
+          <a href="#about" class="hover:text-amber-300 transition-colors">About Us</a>
+          <a href="#academics" class="hover:text-amber-300 transition-colors">Academics</a>
+          <a href="#facilities" class="hover:text-amber-300 transition-colors">Facilities</a>
+          <a href="#gallery" class="hover:text-amber-300 transition-colors">Campus Gallery</a>
+          <a href="#admissions" class="hover:text-amber-300 transition-colors">Admissions</a>
+          <a href="#contact" class="hover:text-amber-300 transition-colors">Contact</a>
+        </nav>
+
+        <!-- Header Buttons -->
+        <div class="hidden sm:flex items-center gap-3">
+          <button data-open-inquiry class="px-4 py-2 rounded-full text-xs font-semibold uppercase tracking-wider text-amber-300 border border-amber-400/40 hover:bg-amber-400/10 transition-colors">
+            Inquire
+          </button>
+          <a href="#contact" class="px-5 py-2 rounded-full text-xs font-bold uppercase tracking-wider bg-amber-400 hover:bg-amber-300 text-navy-950 shadow transition-colors">
+            Book Visit
+          </a>
+        </div>
+
+        <!-- Mobile Menu Toggle -->
+        <div class="flex lg:hidden items-center gap-2">
+          <button data-open-inquiry class="px-3 py-1.5 rounded-full text-xs font-semibold text-amber-300 border border-amber-400/40">
+            Inquire
+          </button>
+          <button id="mobile-menu-btn" class="p-2 text-slate-300 hover:text-white rounded-lg focus:outline-none" aria-label="Open mobile menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-backdrop" class="fixed inset-0 bg-navy-950/70 z-50 hidden opacity-0 transition-opacity duration-300 backdrop-blur-sm"></div>
+  <div id="mobile-drawer" class="fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-navy-950 text-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl flex flex-col p-6 border-l border-white/10">
+    <div class="flex items-center justify-between pb-5 border-b border-navy-800">
+      <div class="flex items-center gap-2">
+        <i data-lucide="shield" class="w-5 h-5 text-amber-400"></i>
+        <span class="font-crest font-bold text-sm uppercase text-amber-300">Meridian Crest</span>
+      </div>
+      <button id="close-mobile-menu" class="p-2 text-slate-400 hover:text-white rounded-lg" aria-label="Close menu">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+    
+    <nav class="flex flex-col gap-4 py-6 text-base font-medium">
+      <a href="#home" class="mobile-nav-link text-slate-200 hover:text-amber-300 py-1.5">Home</a>
+      <a href="#about" class="mobile-nav-link text-slate-200 hover:text-amber-300 py-1.5">About Our School</a>
+      <a href="#academics" class="mobile-nav-link text-slate-200 hover:text-amber-300 py-1.5">Academic Programs</a>
+      <a href="#facilities" class="mobile-nav-link text-slate-200 hover:text-amber-300 py-1.5">Campus Facilities</a>
+      <a href="#gallery" class="mobile-nav-link text-slate-200 hover:text-amber-300 py-1.5">Photo Gallery</a>
+      <a href="#admissions" class="mobile-nav-link text-slate-200 hover:text-amber-300 py-1.5">Admissions &amp; Tuition</a>
+      <a href="#contact" class="mobile-nav-link text-slate-200 hover:text-amber-300 py-1.5">Contact Us</a>
+    </nav>
+
+    <div class="mt-auto pt-6 border-t border-navy-800 flex flex-col gap-3">
+      <button data-open-inquiry class="w-full py-3 rounded-xl text-center text-xs font-bold uppercase tracking-wider text-amber-300 border border-amber-400/40">
+        Inquire Online
+      </button>
+      <a href="#contact" class="mobile-nav-link w-full py-3 rounded-xl text-center text-xs font-bold uppercase tracking-wider bg-amber-400 text-navy-950">
+        Book Campus Tour
+      </a>
+    </div>
+  </div>
+
+  <!-- Hero Section with Big Web Image -->
+  <section id="home" class="relative min-h-[82vh] bg-navy-950 flex items-center justify-center overflow-hidden">
+    <!-- Web Image Background -->
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1920&q=80" 
+           alt="Meridian Crest Academy Stately Campus Grounds" 
+           class="w-full h-full object-cover object-center filter brightness-[0.42]">
+      <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/40 to-transparent"></div>
+    </div>
+
+    <div class="relative z-10 max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 py-20 text-center text-white space-y-6">
+      
+      <div class="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-amber-500/20 border border-amber-400/30 text-amber-300 text-xs sm:text-sm font-semibold tracking-wide">
+        <i data-lucide="award" class="w-4 h-4 text-amber-400"></i>
+        Premier Independent Day &amp; Boarding School &bull; Grades 6–12
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl md:text-7xl font-serif font-bold leading-tight tracking-tight">
+        Where Inquiring Minds<br>
+        <span class="gold-gradient-text italic font-normal">Become Inspiring Leaders</span>
+      </h1>
+
+      <p class="text-slate-300 text-base sm:text-xl font-light max-w-2xl mx-auto leading-relaxed">
+        Set across 160 scenic acres in the Berkshire Hills, Meridian Crest Academy pairs century-old traditions with modern innovation in science, arts, and global leadership.
+      </p>
+
+      <div class="pt-4 flex flex-wrap items-center justify-center gap-4">
+        <button data-open-inquiry class="px-8 py-3.5 rounded-full bg-amber-400 hover:bg-amber-300 text-navy-950 font-bold text-xs uppercase tracking-wider shadow-lg hover:shadow-amber-400/20 transition-all flex items-center gap-2">
+          <span>Inquire for Admission</span>
+          <i data-lucide="arrow-right" class="w-4 h-4"></i>
+        </button>
+        <a href="#facilities" class="px-8 py-3.5 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-xs uppercase tracking-wider border border-white/20 backdrop-blur-sm transition-all flex items-center gap-2">
+          <i data-lucide="camera" class="w-4 h-4 text-amber-400"></i>
+          <span>Explore Campus</span>
+        </a>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Key School Stats Bar -->
+  <section id="stats-section" class="relative -mt-8 z-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="bg-white rounded-3xl shadow-xl border border-slate-200/80 p-6 sm:p-10">
+      <div class="grid grid-cols-2 md:grid-cols-4 gap-6 text-center divide-y md:divide-y-0 md:divide-x divide-slate-100">
+        
+        <div class="pt-3 md:pt-0">
+          <div class="text-3xl sm:text-4xl font-serif font-bold text-navy-950 stat-counter" data-target="100" data-suffix="%">0%</div>
+          <p class="text-xs font-bold uppercase tracking-wider text-amber-600 mt-1">College Placement</p>
+          <p class="text-[11px] text-slate-500">Ivy League &amp; Top 30 World Unis</p>
+        </div>
+
+        <div class="pt-3 md:pt-0">
+          <div class="text-3xl sm:text-4xl font-serif font-bold text-navy-950 stat-counter" data-target="8" data-prefix="1:">1:0</div>
+          <p class="text-xs font-bold uppercase tracking-wider text-amber-600 mt-1">Student / Faculty Ratio</p>
+          <p class="text-[11px] text-slate-500">Average seminar class size: 11</p>
+        </div>
+
+        <div class="pt-3 md:pt-0">
+          <div class="text-3xl sm:text-4xl font-serif font-bold text-navy-950 stat-counter" data-target="48" data-suffix="+">0+</div>
+          <p class="text-xs font-bold uppercase tracking-wider text-amber-600 mt-1">Nations Represented</p>
+          <p class="text-[11px] text-slate-500">Global multicultural community</p>
+        </div>
+
+        <div class="pt-3 md:pt-0">
+          <div class="text-3xl sm:text-4xl font-serif font-bold text-navy-950 stat-counter" data-target="39.4" data-suffix=" / 45">0</div>
+          <p class="text-xs font-bold uppercase tracking-wider text-amber-600 mt-1">Average IB Score</p>
+          <p class="text-[11px] text-slate-500">Global worldwide average: 30.2</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- About Our School / Principal's Welcome -->
+  <section id="about" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-12 items-center">
+      
+      <!-- Principal / Head of School Photo -->
+      <div class="lg:col-span-5">
+        <div class="relative rounded-3xl overflow-hidden shadow-xl border-4 border-white bg-slate-200">
+          <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=800&q=80" 
+               alt="Dr. Eleanor Vance - Head of Meridian Crest Academy" 
+               class="w-full h-[450px] object-cover object-top">
+          <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-6 left-6 right-6 text-white">
+            <span class="text-xs font-bold uppercase tracking-wider text-amber-400">Head of Academy</span>
+            <h4 class="text-2xl font-serif font-bold">Dr. Eleanor Vance, Ph.D.</h4>
+            <p class="text-xs text-slate-300">Oxford D.Phil. &bull; Harvard GSE</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Welcome Content -->
+      <div class="lg:col-span-7 space-y-5">
+        <div class="inline-flex items-center gap-2 text-xs font-bold uppercase tracking-widest text-amber-600">
+          <span class="w-6 h-[2px] bg-amber-500"></span>
+          Welcome to Meridian Crest
+        </div>
+
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-navy-950 leading-tight">
+          A Community Built on Character, Intellect, and Wonder
+        </h2>
+
+        <p class="text-slate-600 text-base leading-relaxed">
+          At Meridian Crest, we believe that education is far more than exam preparation. Our students learn to think with independent courage, defend their principles with eloquence, and treat one another with genuine compassion.
+        </p>
+
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Through the round-table Harkness method, hands-on scientific research, competitive athletics, and rich arts programs, each child is challenged to discover their distinct gifts within a supportive, close-knit family environment.
+        </p>
+
+        <!-- 3 Pillars -->
+        <div class="grid sm:grid-cols-3 gap-4 pt-3">
+          <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm text-center">
+            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mx-auto mb-2">
+              <i data-lucide="book-open" class="w-5 h-5"></i>
+            </div>
+            <h5 class="font-serif font-bold text-navy-950 text-base">Inquiry</h5>
+            <p class="text-[11px] text-slate-500 mt-1">Deep Socratic dialogue and creative thinking.</p>
+          </div>
+
+          <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm text-center">
+            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mx-auto mb-2">
+              <i data-lucide="heart" class="w-5 h-5"></i>
+            </div>
+            <h5 class="font-serif font-bold text-navy-950 text-base">Character</h5>
+            <p class="text-[11px] text-slate-500 mt-1">Ethical leadership, kindness, and civic service.</p>
+          </div>
+
+          <div class="bg-white p-4 rounded-2xl border border-slate-200 shadow-sm text-center">
+            <div class="w-10 h-10 rounded-xl bg-amber-50 text-amber-600 flex items-center justify-center mx-auto mb-2">
+              <i data-lucide="globe" class="w-5 h-5"></i>
+            </div>
+            <h5 class="font-serif font-bold text-navy-950 text-base">Community</h5>
+            <p class="text-[11px] text-slate-500 mt-1">48 nations learning and living as one family.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Academic Programs (with Photos) -->
+  <section id="academics" class="py-20 bg-cream-100 border-y border-amber-200/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-3 mb-14">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Curriculum of Excellence</span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-navy-950">
+          Academic Pathways by Grade
+        </h2>
+        <p class="text-slate-600 text-sm">
+          A purposeful academic journey from Middle School foundations to the world-renowned IB Diploma.
+        </p>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <!-- Card 1: Middle School -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
+          <div class="h-48 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" 
+                 alt="Middle School Classroom Discussion" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-navy-950/80 text-amber-300 text-xs font-bold backdrop-blur-sm">
+              Grades 6 – 8
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="font-serif font-bold text-xl text-navy-950">The Middle Years</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Fosters active curiosity through interactive science projects, language acquisition (Spanish, French, Latin, or Mandarin), and interdisciplinary humanities.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 pt-2 border-t border-slate-100">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> Max 12 students per class</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> Exploratory STEAM workshops</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> Daily athletic &amp; arts rotation</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 2: Senior Academy -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
+          <div class="h-48 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80" 
+                 alt="Students at Harkness Seminar Table" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-navy-950/80 text-amber-300 text-xs font-bold backdrop-blur-sm">
+              Grades 9 – 10
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="font-serif font-bold text-xl text-navy-950">Senior Academy</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              Immerses students into the Harkness oval-table discussion method. Teaches critical analysis of primary source texts, multivariable mathematics, and laboratory design.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 pt-2 border-t border-slate-100">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> Socratic Harkness dialogue</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> Pre-AP and Honors courses</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> 1-on-1 Academic counseling</li>
+            </ul>
+          </div>
+        </div>
+
+        <!-- Card 3: IB Diploma -->
+        <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all group">
+          <div class="h-48 overflow-hidden relative">
+            <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" 
+                 alt="IB Diploma Students Group Study" 
+                 class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+            <span class="absolute top-4 left-4 px-3 py-1 rounded-full bg-navy-950/80 text-amber-300 text-xs font-bold backdrop-blur-sm">
+              Grades 11 – 12
+            </span>
+          </div>
+          <div class="p-6 space-y-3">
+            <h3 class="font-serif font-bold text-xl text-navy-950">IB Diploma &amp; AP</h3>
+            <p class="text-xs text-slate-600 leading-relaxed">
+              The gold standard in international pre-university education. Meridian Crest students achieve exceptional results, gaining credit and entry into the world's leading colleges.
+            </p>
+            <ul class="text-xs text-slate-500 space-y-1.5 pt-2 border-t border-slate-100">
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> 4,000-word Extended Essay</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> Theory of Knowledge (TOK)</li>
+              <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> Ivy League &amp; Oxbridge placement</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- World-Class Campus Facilities (with Great Photos) -->
+  <section id="facilities" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto space-y-3 mb-14">
+      <span class="text-xs font-bold uppercase tracking-widest text-amber-600">State-Of-The-Art Campus</span>
+      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-navy-950">
+        World-Class Facilities
+      </h2>
+      <p class="text-slate-600 text-sm">
+        Every corner of our 160-acre estate is designed to nurture creativity, academic inquiry, and athletic vitality.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <!-- Facility 1: Library -->
+      <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all group">
+        <div class="h-44 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80" 
+               alt="The Wren Heritage Library" 
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 text-amber-600 text-xs font-semibold uppercase mb-1">
+            <i data-lucide="book" class="w-4 h-4"></i> Heritage Library
+          </div>
+          <h4 class="font-serif font-bold text-navy-950 text-lg">Wren Library</h4>
+          <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+            Over 65,000 physical volumes, digital archives, and quiet study alcoves.
+          </p>
+        </div>
+      </div>
+
+      <!-- Facility 2: Science Lab -->
+      <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all group">
+        <div class="h-44 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80" 
+               alt="Newton STEAM and Science Labs" 
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 text-amber-600 text-xs font-semibold uppercase mb-1">
+            <i data-lucide="flask-conical" class="w-4 h-4"></i> STEAM &amp; AI Center
+          </div>
+          <h4 class="font-serif font-bold text-navy-950 text-lg">Newton Labs</h4>
+          <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+            University-grade chemistry suites, genetics incubators, and robotics bay.
+          </p>
+        </div>
+      </div>
+
+      <!-- Facility 3: Sports Arena -->
+      <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all group">
+        <div class="h-44 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80" 
+               alt="Athletic Stadium and Soccer Pitch" 
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 text-amber-600 text-xs font-semibold uppercase mb-1">
+            <i data-lucide="activity" class="w-4 h-4"></i> Athletics
+          </div>
+          <h4 class="font-serif font-bold text-navy-950 text-lg">Aquatic &amp; Sports Complex</h4>
+          <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+            Olympic 50m pool, FIFA turf pitch, 8 squash courts, and fitness pavilion.
+          </p>
+        </div>
+      </div>
+
+      <!-- Facility 4: Arts Hall -->
+      <div class="bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-lg transition-all group">
+        <div class="h-44 overflow-hidden">
+          <img src="https://images.unsplash.com/photo-1460518451282-474b15672083?auto=format&fit=crop&w=800&q=80" 
+               alt="Fine Arts Painting and Sculpture Studio" 
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-5">
+          <div class="flex items-center gap-2 text-amber-600 text-xs font-semibold uppercase mb-1">
+            <i data-lucide="palette" class="w-4 h-4"></i> Fine Arts &amp; Drama
+          </div>
+          <h4 class="font-serif font-bold text-navy-950 text-lg">Blackbox &amp; Art Studios</h4>
+          <p class="text-xs text-slate-500 mt-1 leading-relaxed">
+            650-seat concert theater, ceramics kilns, painting ateliers, and recording studio.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Campus Photo Gallery -->
+  <section id="gallery" class="py-20 bg-navy-950 text-white">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-3 mb-10">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Life at Meridian Crest</span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-white">
+          Campus Life Photo Gallery
+        </h2>
+        <p class="text-slate-400 text-sm">
+          Click any photo to view in high resolution.
+        </p>
+      </div>
+
+      <!-- Category Filter Buttons -->
+      <div class="flex flex-wrap items-center justify-center gap-2 mb-10">
+        <button data-filter="all" class="gallery-filter-btn active px-4 py-1.5 rounded-full text-xs font-bold bg-amber-400 text-navy-950 transition-colors">
+          All Moments
+        </button>
+        <button data-filter="campus" class="gallery-filter-btn px-4 py-1.5 rounded-full text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-colors">
+          Campus &amp; Grounds
+        </button>
+        <button data-filter="academics" class="gallery-filter-btn px-4 py-1.5 rounded-full text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-colors">
+          Classrooms &amp; Labs
+        </button>
+        <button data-filter="sports" class="gallery-filter-btn px-4 py-1.5 rounded-full text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-colors">
+          Sports &amp; Athletics
+        </button>
+        <button data-filter="arts" class="gallery-filter-btn px-4 py-1.5 rounded-full text-xs font-bold bg-slate-800 text-slate-300 hover:bg-slate-700 transition-colors">
+          Arts &amp; Culture
+        </button>
+      </div>
+
+      <!-- Gallery Grid -->
+      <div class="grid grid-cols-2 md:grid-cols-3 gap-4">
+        
+        <!-- Image 1 -->
+        <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden group relative aspect-[4/3] bg-navy-900 border border-white/10" data-category="campus">
+          <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80" 
+               alt="Historic Campus Quad in Berkshire Hills" 
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-xs text-white font-medium">Historic Campus Quad</span>
+          </div>
+        </div>
+
+        <!-- Image 2 -->
+        <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden group relative aspect-[4/3] bg-navy-900 border border-white/10" data-category="academics">
+          <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80" 
+               alt="Harkness Table Seminar Discussion" 
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-xs text-white font-medium">Harkness Seminar Table</span>
+          </div>
+        </div>
+
+        <!-- Image 3 -->
+        <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden group relative aspect-[4/3] bg-navy-900 border border-white/10" data-category="academics">
+          <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80" 
+               alt="Advanced Chemistry and Molecular Biology Lab" 
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-xs text-white font-medium">Biotechnology Lab</span>
+          </div>
+        </div>
+
+        <!-- Image 4 -->
+        <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden group relative aspect-[4/3] bg-navy-900 border border-white/10" data-category="sports">
+          <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80" 
+               alt="Varsity Soccer Championship Match" 
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-xs text-white font-medium">Varsity Athletics</span>
+          </div>
+        </div>
+
+        <!-- Image 5 -->
+        <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden group relative aspect-[4/3] bg-navy-900 border border-white/10" data-category="arts">
+          <img src="https://images.unsplash.com/photo-1460518451282-474b15672083?auto=format&fit=crop&w=800&q=80" 
+               alt="Fine Art Painting Class" 
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-xs text-white font-medium">Fine Arts Studio</span>
+          </div>
+        </div>
+
+        <!-- Image 6 -->
+        <div class="gallery-item cursor-pointer rounded-2xl overflow-hidden group relative aspect-[4/3] bg-navy-900 border border-white/10" data-category="campus">
+          <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80" 
+               alt="Students Studying in Wren Heritage Library" 
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+          <div class="absolute inset-0 bg-navy-950/40 opacity-0 group-hover:opacity-100 transition-opacity flex items-end p-4">
+            <span class="text-xs text-white font-medium">Wren Library Study Hall</span>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Simple Admissions & Tuition Section -->
+  <section id="admissions" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-2xl mx-auto space-y-3 mb-14">
+      <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Join Our Community</span>
+      <h2 class="text-3xl sm:text-4xl font-serif font-bold text-navy-950">
+        Simple Admissions &amp; Tuition
+      </h2>
+      <p class="text-slate-600 text-sm">
+        We review candidates holistically and offer over $5.4M in need-based financial assistance each year.
+      </p>
+    </div>
+
+    <!-- 4 Step Admissions Timeline -->
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+      
+      <div class="bg-white p-6 rounded-3xl border border-slate-200 text-center">
+        <span class="w-10 h-10 rounded-full bg-navy-950 text-amber-400 font-bold flex items-center justify-center mx-auto mb-3 text-sm">1</span>
+        <h4 class="font-serif font-bold text-navy-950 text-lg">Inquire Online</h4>
+        <p class="text-xs text-slate-500 mt-1">Submit your interest to receive our digital brochure and invitation.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-3xl border border-slate-200 text-center">
+        <span class="w-10 h-10 rounded-full bg-navy-950 text-amber-400 font-bold flex items-center justify-center mx-auto mb-3 text-sm">2</span>
+        <h4 class="font-serif font-bold text-navy-950 text-lg">Campus Tour</h4>
+        <p class="text-xs text-slate-500 mt-1">Experience our grounds and meet teachers during a personalized visit.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-3xl border border-slate-200 text-center">
+        <span class="w-10 h-10 rounded-full bg-navy-950 text-amber-400 font-bold flex items-center justify-center mx-auto mb-3 text-sm">3</span>
+        <h4 class="font-serif font-bold text-navy-950 text-lg">Application</h4>
+        <p class="text-xs text-slate-500 mt-1">Submit school records, teacher recommendations, and student reflections.</p>
+      </div>
+
+      <div class="bg-white p-6 rounded-3xl border border-slate-200 text-center">
+        <span class="w-10 h-10 rounded-full bg-navy-950 text-amber-400 font-bold flex items-center justify-center mx-auto mb-3 text-sm">4</span>
+        <h4 class="font-serif font-bold text-navy-950 text-lg">Enrollment</h4>
+        <p class="text-xs text-slate-500 mt-1">Receive admissions offer, review financial aid, and join your House.</p>
+      </div>
+
+    </div>
+
+    <!-- Tuition Comparison Card with Toggle -->
+    <div class="bg-white rounded-3xl border border-slate-200 shadow-md p-8 sm:p-10 max-w-4xl mx-auto">
+      <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 border-b border-slate-200 gap-4">
+        <div>
+          <h3 class="font-serif font-bold text-2xl text-navy-950">Tuition &amp; Fees (2027–2028)</h3>
+          <p class="text-xs text-slate-500 mt-0.5">Transparent fees with full inclusions</p>
+        </div>
+        <div class="inline-flex items-center gap-2 p-1 rounded-full bg-slate-100 border border-slate-200">
+          <span class="text-xs font-semibold text-slate-700 pl-3">Day</span>
+          <label class="relative inline-flex items-center cursor-pointer">
+            <input type="checkbox" id="tuition-type-toggle" checked class="sr-only peer">
+            <div class="w-11 h-6 bg-slate-300 peer-focus:outline-none rounded-full peer peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-slate-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all peer-checked:bg-amber-500"></div>
+          </label>
+          <span class="text-xs font-semibold text-slate-700 pr-3">Boarding</span>
+        </div>
+      </div>
+
+      <div class="py-6 grid sm:grid-cols-2 gap-6">
+        <div class="p-6 rounded-2xl bg-cream-50 border border-amber-200/60">
+          <span class="text-xs font-bold uppercase text-slate-500">Middle School (Grades 6–8)</span>
+          <div class="rate-boarding mt-2">
+            <span class="text-3xl font-serif font-bold text-navy-950">$64,800</span>
+            <span class="text-xs text-slate-500">/ year (7-day boarding)</span>
+          </div>
+          <div class="rate-day hidden mt-2">
+            <span class="text-3xl font-serif font-bold text-navy-950">$38,200</span>
+            <span class="text-xs text-slate-500">/ year (day student)</span>
+          </div>
+          <p class="text-xs text-slate-600 mt-3">Includes meals, academic materials, iPad Pro station, and sports kits.</p>
+        </div>
+
+        <div class="p-6 rounded-2xl bg-cream-50 border border-amber-200/60">
+          <span class="text-xs font-bold uppercase text-slate-500">Senior Academy &amp; IB (Grades 9–12)</span>
+          <div class="rate-boarding mt-2">
+            <span class="text-3xl font-serif font-bold text-navy-950">$69,500</span>
+            <span class="text-xs text-slate-500">/ year (7-day boarding)</span>
+          </div>
+          <div class="rate-day hidden mt-2">
+            <span class="text-3xl font-serif font-bold text-navy-950">$42,600</span>
+            <span class="text-xs text-slate-500">/ year (day student)</span>
+          </div>
+          <p class="text-xs text-slate-600 mt-3">Includes IB exam fees, college counseling, lab access, and residential dining.</p>
+        </div>
+      </div>
+
+      <div class="pt-4 border-t border-slate-100 flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p class="text-xs text-slate-500">Need-based financial aid is available for qualifying families.</p>
+        <button data-open-inquiry class="px-6 py-2.5 rounded-full bg-navy-950 hover:bg-navy-900 text-amber-300 font-bold text-xs uppercase tracking-wider transition-colors">
+          Inquire About Financial Aid
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Testimonials with Photos -->
+  <section class="py-20 bg-cream-100 border-t border-amber-200/40">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-3 mb-12">
+        <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Voices of Meridian Crest</span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-navy-950">
+          What Parents &amp; Alumni Say
+        </h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-6">
+        
+        <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-xs text-slate-600 italic leading-relaxed">
+              "The faculty at Meridian Crest don't just teach subjects; they teach students how to think critically and express themselves with confidence. Our son flourished here."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-100">
+            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=120&q=80" 
+                 alt="Sarah Jenkins - Parent" class="w-10 h-10 rounded-full object-cover">
+            <div>
+              <p class="text-xs font-bold text-navy-950">Sarah Jenkins</p>
+              <p class="text-[11px] text-slate-500">Parent of Class of '25 Graduate</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-xs text-slate-600 italic leading-relaxed">
+              "The Harkness round table method gave me the intellectual independence that made my transition to Harvard effortless. The mentors here stay with you for life."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-100">
+            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=120&q=80" 
+                 alt="David Montgomery - Alumnus" class="w-10 h-10 rounded-full object-cover">
+            <div>
+              <p class="text-xs font-bold text-navy-950">David Montgomery</p>
+              <p class="text-[11px] text-slate-500">Alumnus, Harvard Class of '24</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="bg-white p-6 rounded-3xl border border-slate-200 shadow-sm flex flex-col justify-between">
+          <div>
+            <div class="flex text-amber-400 mb-3">
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+              <i data-lucide="star" class="w-4 h-4 fill-current"></i>
+            </div>
+            <p class="text-xs text-slate-600 italic leading-relaxed">
+              "The house system and pastoral care made our daughter feel so loved and safe as an international boarding student coming from Singapore."
+            </p>
+          </div>
+          <div class="flex items-center gap-3 mt-6 pt-4 border-t border-slate-100">
+            <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?auto=format&fit=crop&w=120&q=80" 
+                 alt="Mei-Ling Chen - Parent" class="w-10 h-10 rounded-full object-cover">
+            <div>
+              <p class="text-xs font-bold text-navy-950">Mei-Ling Chen</p>
+              <p class="text-[11px] text-slate-500">Boarding Parent, Grade 11</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Simple Contact & Tour Booking Form -->
+  <section id="contact" class="py-20 max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-10">
+      
+      <!-- Contact Info -->
+      <div class="lg:col-span-5 space-y-6">
+        <div>
+          <span class="text-xs font-bold uppercase tracking-widest text-amber-600">Get in Touch</span>
+          <h2 class="text-3xl font-serif font-bold text-navy-950 mt-1">Visit Our Campus</h2>
+          <p class="text-slate-600 text-sm mt-2">
+            We welcome prospective families throughout the year for personalized tours and class shadow experiences.
+          </p>
+        </div>
+
+        <div class="space-y-4 text-xs text-slate-600">
+          <div class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
+              <i data-lucide="map-pin" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <p class="font-bold text-navy-950 text-sm">Campus Address</p>
+              <p class="mt-0.5">450 Crestwood Way, Berkshire Hills, MA 01201</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
+              <i data-lucide="phone" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <p class="font-bold text-navy-950 text-sm">Telephone</p>
+              <p class="mt-0.5">+1 (800) 555-0199 (Admissions Direct)</p>
+            </div>
+          </div>
+
+          <div class="flex items-start gap-3">
+            <div class="w-9 h-9 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0">
+              <i data-lucide="mail" class="w-4 h-4"></i>
+            </div>
+            <div>
+              <p class="font-bold text-navy-950 text-sm">Email Inquiries</p>
+              <p class="mt-0.5">admissions@meridiancrest.org</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Campus photo preview card -->
+        <div class="rounded-2xl overflow-hidden border border-slate-200 shadow-sm relative h-40">
+          <img src="https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=800&q=80" 
+               alt="Meridian Crest Academy Bell Tower" 
+               class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-navy-950/40 flex items-end p-4">
+            <span class="text-xs text-white font-medium">Berkshire Hills Estate &bull; Open Monday–Saturday</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Quick Inquiry Form -->
+      <div class="lg:col-span-7 bg-white p-8 sm:p-10 rounded-3xl border border-slate-200 shadow-lg">
+        <h3 class="font-serif font-bold text-2xl text-navy-950">Book a Private Tour or Inquire</h3>
+        <p class="text-xs text-slate-500 mt-1 mb-6">Our admissions team will follow up within one business day.</p>
+
+        <form id="contact-form" class="space-y-4">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-navy-950 uppercase mb-1">Parent Name *</label>
+              <input type="text" name="name" required placeholder="Eleanor Sinclair" 
+                     class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-amber-500">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-navy-950 uppercase mb-1">Email Address *</label>
+              <input type="email" name="email" required placeholder="eleanor@example.com" 
+                     class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-amber-500">
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block text-xs font-bold text-navy-950 uppercase mb-1">Phone Number</label>
+              <input type="tel" placeholder="+1 (555) 000-0000" 
+                     class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-amber-500">
+            </div>
+            <div>
+              <label class="block text-xs font-bold text-navy-950 uppercase mb-1">Student Grade *</label>
+              <select required class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-amber-500 bg-white">
+                <option value="">Select Grade Level</option>
+                <option value="6">Grade 6</option>
+                <option value="7">Grade 7</option>
+                <option value="8">Grade 8</option>
+                <option value="9">Grade 9</option>
+                <option value="10">Grade 10</option>
+                <option value="11">Grade 11 (IB Diploma)</option>
+                <option value="12">Grade 12</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-navy-950 uppercase mb-1">Message or Special Requests</label>
+            <textarea rows="3" placeholder="Tell us about your student's interests (e.g. robotics, cello, boarding preferences)..." 
+                      class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm focus:outline-none focus:border-amber-500"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-3.5 rounded-xl bg-navy-950 hover:bg-navy-900 text-amber-400 font-bold text-xs uppercase tracking-wider shadow transition-colors">
+            Send Inquiry / Book Tour
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Clean Footer -->
+  <footer class="bg-navy-950 text-white border-t border-navy-800 py-12">
+    <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-6 pb-8 border-b border-navy-800 text-center sm:text-left">
+        <div class="flex items-center gap-3">
+          <div class="w-10 h-10 rounded-full bg-amber-400/20 border border-amber-400/40 flex items-center justify-center text-amber-400">
+            <i data-lucide="shield" class="w-5 h-5"></i>
+          </div>
+          <div>
+            <span class="font-crest font-bold text-base tracking-wider uppercase text-white block">Meridian Crest</span>
+            <span class="text-[11px] text-amber-400/80 font-serif italic">Academy &bull; Est. 1894</span>
+          </div>
+        </div>
+
+        <div class="flex flex-wrap items-center justify-center gap-6 text-xs text-slate-300">
+          <a href="index.html" class="text-amber-400 font-bold hover:underline">&larr; Compare All Hub</a>
+          <a href="#about" class="hover:text-amber-300 transition-colors">About</a>
+          <a href="#academics" class="hover:text-amber-300 transition-colors">Academics</a>
+          <a href="#facilities" class="hover:text-amber-300 transition-colors">Facilities</a>
+          <a href="#gallery" class="hover:text-amber-300 transition-colors">Gallery</a>
+          <a href="#admissions" class="hover:text-amber-300 transition-colors">Tuition &amp; Aid</a>
+          <a href="#contact" class="hover:text-amber-300 transition-colors">Contact</a>
+        </div>
+      </div>
+
+      <div class="pt-8 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-slate-500 text-center sm:text-left">
+        <p>&copy; 2026 Meridian Crest Academy. Dedicated to Academic Excellence &amp; Moral Character.</p>
+        <p>IB World School &bull; NEASC Accredited &bull; NAIS Member</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox Modal for Photo Gallery -->
+  <div id="lightbox-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy-950/90 backdrop-blur-md">
+    <div class="relative max-w-4xl w-full flex flex-col items-center">
+      <button data-close-lightbox class="absolute -top-12 right-0 text-white hover:text-amber-400 p-2">
+        <i data-lucide="x" class="w-7 h-7"></i>
+      </button>
+      <img id="lightbox-image" src="" alt="" class="max-h-[80vh] w-auto rounded-2xl shadow-2xl border border-white/20">
+      <p id="lightbox-caption" class="text-white text-sm mt-3 font-medium text-center"></p>
+    </div>
+  </div>
+
+  <!-- Reusable Admissions Inquiry Modal -->
+  <div id="inquiry-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy-950/80 backdrop-blur-md">
+    <div class="modal-content bg-white w-full max-w-md rounded-3xl shadow-2xl overflow-hidden border border-slate-200">
+      <div class="bg-navy-950 p-5 text-white flex items-center justify-between">
+        <div>
+          <span class="text-[11px] uppercase tracking-wider text-amber-400 font-bold">Admissions 2027–2028</span>
+          <h3 class="font-serif font-bold text-lg">Inquire Online</h3>
+        </div>
+        <button data-close-modal class="text-slate-400 hover:text-white p-1.5"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <form id="inquiry-form" class="p-6 space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-navy-950 uppercase mb-1">Parent Name *</label>
+          <input type="text" id="parentName" required placeholder="Eleanor Sinclair" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-navy-950 uppercase mb-1">Student Name *</label>
+          <input type="text" id="studentName" required placeholder="Thomas Sinclair" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-navy-950 uppercase mb-1">Email Address *</label>
+          <input type="email" id="parentEmail" required placeholder="eleanor@example.com" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-navy-950 uppercase mb-1">Grade of Entry</label>
+          <select id="gradeLevel" class="w-full px-4 py-2.5 rounded-xl border border-slate-300 text-sm bg-white">
+            <option value="Middle School">Middle School (Grades 6–8)</option>
+            <option value="Senior Academy" selected>Senior Academy (Grades 9–10)</option>
+            <option value="IB Diploma">IB Diploma (Grades 11–12)</option>
+          </select>
+        </div>
+        <div class="pt-2 flex justify-end gap-3">
+          <button type="button" data-close-modal class="px-4 py-2 text-xs font-bold text-slate-600">Cancel</button>
+          <button type="submit" class="px-6 py-2.5 rounded-xl bg-navy-950 text-amber-400 font-bold text-xs uppercase tracking-wider">
+            Submit Inquiry
+          </button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- Scripts -->
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/variant-switcher.js"></script>
+  <script>
+    lucide.createIcons();
+  </script>
+</body>
+</html>

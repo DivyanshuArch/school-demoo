@@ -1,0 +1,186 @@
+/* ==========================================================================
+   Meridian Crest Academy - Custom Stylesheet
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Cinzel:wght@500;600;700;800&display=swap');
+
+:root {
+  --color-navy-950: #071120;
+  --color-navy-900: #0c1a30;
+  --color-navy-800: #14284b;
+  --color-navy-700: #1e3a68;
+  --color-gold-500: #c59b27;
+  --color-gold-400: #d8af3a;
+  --color-gold-300: #ebd068;
+  --color-gold-100: #fbf7ea;
+  --color-cream: #faf8f5;
+  --color-cream-subtle: #f3efe6;
+}
+
+body {
+  font-family: 'Plus Jakarta Sans', sans-serif;
+  color: #334155;
+  background-color: var(--color-cream);
+  overflow-x: hidden;
+}
+
+.font-serif {
+  font-family: 'Cormorant Garamond', Georgia, serif;
+}
+
+.font-crest {
+  font-family: 'Cinzel', serif;
+  letter-spacing: 0.08em;
+}
+
+/* Glassmorphism */
+.glass-nav {
+  background: rgba(12, 26, 48, 0.94);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.6);
+}
+
+.glass-card-dark {
+  background: rgba(12, 26, 48, 0.85);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(216, 175, 58, 0.25);
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
+
+/* Gold Gradient utilities */
+.gold-gradient-text {
+  background: linear-gradient(135deg, #f5d77f 0%, #d8af3a 50%, #9e7a17 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.gold-gradient-bg {
+  background: linear-gradient(135deg, #d8af3a 0%, #b88f1d 100%);
+}
+
+/* Decorative Divider */
+.crest-divider {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.crest-divider::before,
+.crest-divider::after {
+  content: '';
+  height: 1px;
+  width: 60px;
+  background: linear-gradient(to right, transparent, #c59b27, transparent);
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(12px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Hero Zoom Subtlety */
+.hero-image-zoom {
+  transition: transform 12s cubic-bezier(0.25, 1, 0.5, 1);
+}
+.hero-container:hover .hero-image-zoom {
+  transform: scale(1.05);
+}
+
+/* Modal Overlay Animation */
+.modal-overlay {
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+.modal-overlay.active {
+  opacity: 1;
+  visibility: visible;
+}
+.modal-overlay:not(.active) {
+  opacity: 0;
+  visibility: hidden;
+  pointer-events: none;
+}
+
+.modal-content {
+  transition: transform 0.3s cubic-bezier(0.34, 1.56, 0.64, 1), opacity 0.3s ease;
+}
+.modal-overlay.active .modal-content {
+  transform: scale(1) translateY(0);
+  opacity: 1;
+}
+.modal-overlay:not(.active) .modal-content {
+  transform: scale(0.95) translateY(20px);
+  opacity: 0;
+}
+
+/* Smooth Tab transitions */
+.tab-pane {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.35s ease;
+}
+.tab-pane.active {
+  display: block;
+  opacity: 1;
+}
+
+/* Accordion transition */
+.accordion-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.35s ease-out, padding 0.35s ease-out;
+}
+.accordion-item.active .accordion-content {
+  max-height: 600px;
+}
+.accordion-item.active .accordion-icon {
+  transform: rotate(180deg);
+}
+
+/* Image shine hover effect */
+.shine-hover {
+  position: relative;
+  overflow: hidden;
+}
+.shine-hover::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -75%;
+  width: 50%;
+  height: 100%;
+  background: linear-gradient(to right, rgba(255,255,255,0) 0%, rgba(255,255,255,0.2) 50%, rgba(255,255,255,0) 100%);
+  transform: skewX(-25deg);
+  transition: left 0.75s;
+  z-index: 10;
+  pointer-events: none;
+}
+.shine-hover:hover::before {
+  left: 125%;
+}

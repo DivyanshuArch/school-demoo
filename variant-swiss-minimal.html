@@ -1,0 +1,387 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nordic Academy | Swiss Minimalist Design Variant</title>
+  <meta name="description" content="Nordic International Academy - A modern minimalist educational institution grounded in clarity, inquiry, and architectural simplicity.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            nordic: {
+              black: '#090a0f',
+              slate: '#1e2430',
+              blue: '#1d4ed8',
+              accent: '#2563eb',
+              light: '#f8fafc',
+              border: '#e2e8f0'
+            }
+          },
+          fontFamily: {
+            space: ['"Space Grotesk"', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="assets/css/variants.css">
+</head>
+<body class="bg-white text-nordic-black antialiased selection:bg-nordic-accent selection:text-white pb-24">
+
+  <!-- Top Minimalist Utility Bar -->
+  <header class="border-b border-nordic-border sticky top-0 z-40 bg-white/95 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 flex items-center justify-between h-20">
+      
+      <!-- Brand Logo / Wordmark -->
+      <a href="variant-swiss-minimal.html" class="flex items-center gap-3">
+        <div class="w-8 h-8 bg-nordic-black text-white flex items-center justify-center font-space font-bold text-sm tracking-tighter">
+          N/A
+        </div>
+        <div>
+          <span class="font-space font-bold text-lg tracking-tight uppercase block leading-none">Nordic Academy</span>
+          <span class="text-[10px] tracking-widest text-slate-500 uppercase font-sans">International School &bull; Est. 1968</span>
+        </div>
+      </a>
+
+      <!-- Minimal Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-xs uppercase tracking-wider font-semibold text-slate-600">
+        <a href="#about" class="hover:text-nordic-accent transition-colors">Philosophy</a>
+        <a href="#curriculum" class="hover:text-nordic-accent transition-colors">Programmes</a>
+        <a href="#campus" class="hover:text-nordic-accent transition-colors">Spaces</a>
+        <a href="#metrics" class="hover:text-nordic-accent transition-colors">Results</a>
+        <a href="#admissions" class="hover:text-nordic-accent transition-colors">Admissions</a>
+      </nav>
+
+      <!-- Minimalist CTA -->
+      <div class="flex items-center gap-4">
+        <a href="#admissions" class="px-5 py-2.5 rounded-none border border-nordic-black text-xs uppercase tracking-wider font-bold hover:bg-nordic-black hover:text-white transition-colors">
+          Inquire 2027
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero Section (Swiss Grid Minimal) -->
+  <section class="max-w-7xl mx-auto px-6 lg:px-12 pt-16 pb-20 border-b border-nordic-border">
+    <div class="grid lg:grid-cols-12 gap-12 items-end">
+      
+      <div class="lg:col-span-8 space-y-6">
+        <div class="inline-flex items-center gap-2 text-xs font-mono uppercase tracking-widest text-nordic-accent">
+          <span>// 01</span>
+          <span>Pedagogy of Clarity &amp; Autonomy</span>
+        </div>
+        
+        <h1 class="text-4xl sm:text-6xl lg:text-7xl font-space font-bold tracking-tight leading-[1.05] uppercase">
+          Forming Minds<br>
+          <span class="text-slate-400 font-normal">That Think Clearly.</span>
+        </h1>
+
+        <p class="text-slate-600 text-base sm:text-lg max-w-xl font-light leading-relaxed">
+          Nordic Academy eliminates superficial educational clutter. Through Scandinavian project inquiry, rigorous mathematics, and architectural spaces bathed in natural daylight, our students cultivate disciplined, autonomous intellects.
+        </p>
+
+        <div class="pt-2 flex flex-wrap items-center gap-4 text-xs font-mono uppercase">
+          <a href="#admissions" class="px-6 py-3.5 bg-nordic-accent text-white font-bold tracking-wider hover:bg-blue-700 transition-colors">
+            Start Application &rarr;
+          </a>
+          <a href="#campus" class="px-6 py-3.5 border border-slate-300 text-slate-700 font-semibold tracking-wider hover:border-slate-800 transition-colors">
+            Explore Campus Architecture
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-4 space-y-4">
+        <div class="border-t-2 border-nordic-black pt-4">
+          <span class="text-xs font-mono text-slate-500 uppercase block">// Quick Overview</span>
+          <p class="text-sm font-space font-medium text-slate-800 mt-1">
+            Grades 6–12 &bull; International Baccalaureate World School &bull; Day &amp; Residential
+          </p>
+        </div>
+        <div class="border-t border-slate-200 pt-3">
+          <span class="text-xs font-mono text-slate-500 uppercase block">// Location</span>
+          <p class="text-sm font-space text-slate-800 mt-0.5">
+            Copenhagen Waterfront Campus &amp; Berkshire Highlands Outpost
+          </p>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Hero Photography (Full Bleed Image) -->
+    <div class="mt-14 overflow-hidden border border-nordic-border aspect-[21/9] bg-slate-100">
+      <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1920&q=80" 
+           alt="Nordic Modern School Campus Quad" 
+           class="w-full h-full object-cover filter contrast-[1.05] grayscale-[20%]">
+    </div>
+  </section>
+
+  <!-- Key Metrics Strip (Clean Swiss Typography) -->
+  <section id="metrics" class="max-w-7xl mx-auto px-6 lg:px-12 py-16 border-b border-nordic-border">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
+      
+      <div class="space-y-1">
+        <span class="font-mono text-xs text-slate-400">// 01 &bull; Matriculation</span>
+        <div class="text-4xl sm:text-5xl font-space font-bold text-nordic-black">100%</div>
+        <p class="text-xs text-slate-500 uppercase tracking-wide">University Admission</p>
+      </div>
+
+      <div class="space-y-1">
+        <span class="font-mono text-xs text-slate-400">// 02 &bull; Cohort</span>
+        <div class="text-4xl sm:text-5xl font-space font-bold text-nordic-black">1:8</div>
+        <p class="text-xs text-slate-500 uppercase tracking-wide">Faculty-Student Ratio</p>
+      </div>
+
+      <div class="space-y-1">
+        <span class="font-mono text-xs text-slate-400">// 03 &bull; Global Reach</span>
+        <div class="text-4xl sm:text-5xl font-space font-bold text-nordic-black">36</div>
+        <p class="text-xs text-slate-500 uppercase tracking-wide">Nationalities Represented</p>
+      </div>
+
+      <div class="space-y-1">
+        <span class="font-mono text-xs text-slate-400">// 04 &bull; Score</span>
+        <div class="text-4xl sm:text-5xl font-space font-bold text-nordic-black">39.2</div>
+        <p class="text-xs text-slate-500 uppercase tracking-wide">Average IB Diploma Score</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Three Core Pillars (Grid Cards) -->
+  <section id="about" class="max-w-7xl mx-auto px-6 lg:px-12 py-20 border-b border-nordic-border">
+    <div class="mb-12 max-w-xl">
+      <span class="text-xs font-mono uppercase tracking-widest text-nordic-accent">// 02 &bull; Foundational Philosophy</span>
+      <h2 class="text-3xl font-space font-bold uppercase tracking-tight text-nordic-black mt-2">
+        Principles of Learning
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-3 gap-8">
+      
+      <div class="p-8 border border-nordic-border space-y-4 hover:border-nordic-black transition-colors">
+        <span class="font-mono text-xs text-nordic-accent font-bold">P-01</span>
+        <h3 class="font-space font-bold text-xl uppercase">Radical Intellectual Autonomy</h3>
+        <p class="text-xs text-slate-600 leading-relaxed font-normal">
+          Students do not sit in passive rows. All learning is anchored in structured research inquiries, open dialogue, and scientific hypothesis defense.
+        </p>
+      </div>
+
+      <div class="p-8 border border-nordic-border space-y-4 hover:border-nordic-black transition-colors">
+        <span class="font-mono text-xs text-nordic-accent font-bold">P-02</span>
+        <h3 class="font-space font-bold text-xl uppercase">Daylight &amp; Clean Form</h3>
+        <p class="text-xs text-slate-600 leading-relaxed font-normal">
+          Classrooms are engineered with acoustic dampening, natural timber, and expansive glass to foster mental calm and sustained cognitive stamina.
+        </p>
+      </div>
+
+      <div class="p-8 border border-nordic-border space-y-4 hover:border-nordic-black transition-colors">
+        <span class="font-mono text-xs text-nordic-accent font-bold">P-03</span>
+        <h3 class="font-space font-bold text-xl uppercase">Global Ecological Action</h3>
+        <p class="text-xs text-slate-600 leading-relaxed font-normal">
+          Every scholar undertakes a year-long environmental policy project, bridging theoretical science with measurable real-world outcomes.
+        </p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Educational Programmes with Web Photography -->
+  <section id="curriculum" class="max-w-7xl mx-auto px-6 lg:px-12 py-20 border-b border-nordic-border">
+    <div class="mb-12 max-w-xl">
+      <span class="text-xs font-mono uppercase tracking-widest text-nordic-accent">// 03 &bull; Academic Trajectory</span>
+      <h2 class="text-3xl font-space font-bold uppercase tracking-tight text-nordic-black mt-2">
+        Programs of Study
+      </h2>
+    </div>
+
+    <div class="grid md:grid-cols-2 gap-8">
+      
+      <!-- Card 1 -->
+      <div class="border border-nordic-border group">
+        <div class="h-64 overflow-hidden bg-slate-100">
+          <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" 
+               alt="Middle School Cohort Discussion" 
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-8 space-y-3">
+          <div class="flex items-center justify-between font-mono text-xs text-slate-500">
+            <span>AGES 11 – 14</span>
+            <span class="text-nordic-accent font-bold">MIDDLE YEARS</span>
+          </div>
+          <h3 class="font-space font-bold text-2xl uppercase">Foundational Inquiry</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Interdisciplinary STEM, dual language acquisition (Danish, French, German, or Mandarin), laboratory experiments, and studio arts rotation.
+          </p>
+        </div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="border border-nordic-border group">
+        <div class="h-64 overflow-hidden bg-slate-100">
+          <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80" 
+               alt="Senior Lyceum Seminar" 
+               class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        </div>
+        <div class="p-8 space-y-3">
+          <div class="flex items-center justify-between font-mono text-xs text-slate-500">
+            <span>AGES 15 – 18</span>
+            <span class="text-nordic-accent font-bold">SENIOR LYCEUM</span>
+          </div>
+          <h3 class="font-space font-bold text-2xl uppercase">The IB Diploma Programme</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Rigorous pre-collegiate credential including the 4,000-word Extended Essay, Theory of Knowledge, and Higher Level sciences &amp; mathematics.
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Architectural Spaces & Facilities -->
+  <section id="campus" class="max-w-7xl mx-auto px-6 lg:px-12 py-20 border-b border-nordic-border">
+    <div class="mb-12 max-w-xl">
+      <span class="text-xs font-mono uppercase tracking-widest text-nordic-accent">// 04 &bull; Physical Context</span>
+      <h2 class="text-3xl font-space font-bold uppercase tracking-tight text-nordic-black mt-2">
+        Campus Architecture
+      </h2>
+    </div>
+
+    <div class="grid sm:grid-cols-3 gap-6">
+      
+      <div class="border border-nordic-border">
+        <div class="h-52 overflow-hidden bg-slate-100">
+          <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80" 
+               alt="Silent Study Library" class="w-full h-full object-cover">
+        </div>
+        <div class="p-5">
+          <h4 class="font-space font-bold text-base uppercase">The Silent Library</h4>
+          <p class="text-xs text-slate-500 mt-1">45,000 reference volumes &amp; acoustic study pods.</p>
+        </div>
+      </div>
+
+      <div class="border border-nordic-border">
+        <div class="h-52 overflow-hidden bg-slate-100">
+          <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80" 
+               alt="Science and Molecular Biology Lab" class="w-full h-full object-cover">
+        </div>
+        <div class="p-5">
+          <h4 class="font-space font-bold text-base uppercase">Biochemistry Quad</h4>
+          <p class="text-xs text-slate-500 mt-1">Cleanrooms, spectrophotometry &amp; robotics bay.</p>
+        </div>
+      </div>
+
+      <div class="border border-nordic-border">
+        <div class="h-52 overflow-hidden bg-slate-100">
+          <img src="https://images.unsplash.com/photo-1574629810360-7efbbe195018?auto=format&fit=crop&w=800&q=80" 
+               alt="Outdoor Athletics Field" class="w-full h-full object-cover">
+        </div>
+        <div class="p-5">
+          <h4 class="font-space font-bold text-base uppercase">Athletics Pavilion</h4>
+          <p class="text-xs text-slate-500 mt-1">All-weather turf pitch and Olympic standard pool.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Clean Minimalist Admissions & Inquiry Form -->
+  <section id="admissions" class="max-w-7xl mx-auto px-6 lg:px-12 py-20">
+    <div class="grid lg:grid-cols-12 gap-12 items-start">
+      
+      <div class="lg:col-span-5 space-y-4">
+        <span class="text-xs font-mono uppercase tracking-widest text-nordic-accent">// 05 &bull; Enrollment</span>
+        <h2 class="text-3xl font-space font-bold uppercase tracking-tight text-nordic-black">
+          Admissions for 2027–2028
+        </h2>
+        <p class="text-xs text-slate-600 leading-relaxed font-normal">
+          We admit candidates on a rolling holistic review basis. Complete the inquiry below to receive our curriculum prospectus and schedule a private campus walkthrough.
+        </p>
+        <div class="pt-4 font-mono text-xs space-y-2 text-slate-500 border-t border-nordic-border">
+          <p>&bull; Priority Application Deadline: January 15</p>
+          <p>&bull; Day &amp; Residential Boarding Options</p>
+          <p>&bull; Need-Based Financial Aid Available</p>
+        </div>
+      </div>
+
+      <div class="lg:col-span-7 p-8 border border-nordic-black bg-white">
+        <form id="nordic-inquiry-form" class="space-y-4" onsubmit="event.preventDefault(); alert('Inquiry recorded. The Nordic Academy Admissions Dean will reach out within 24 hours.'); this.reset();">
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-mono text-xs uppercase mb-1">Parent / Guardian Name *</label>
+              <input type="text" required placeholder="Henrik Lindqvist" 
+                     class="w-full px-4 py-2.5 border border-slate-300 text-xs focus:outline-none focus:border-nordic-black rounded-none">
+            </div>
+            <div>
+              <label class="block font-mono text-xs uppercase mb-1">Email Address *</label>
+              <input type="email" required placeholder="henrik@domain.com" 
+                     class="w-full px-4 py-2.5 border border-slate-300 text-xs focus:outline-none focus:border-nordic-black rounded-none">
+            </div>
+          </div>
+
+          <div class="grid sm:grid-cols-2 gap-4">
+            <div>
+              <label class="block font-mono text-xs uppercase mb-1">Prospective Student Grade</label>
+              <select class="w-full px-4 py-2.5 border border-slate-300 text-xs focus:outline-none focus:border-nordic-black bg-white rounded-none">
+                <option value="Grade 6">Grade 6 (Middle Years)</option>
+                <option value="Grade 7">Grade 7 (Middle Years)</option>
+                <option value="Grade 8">Grade 8 (Middle Years)</option>
+                <option value="Grade 9">Grade 9 (Senior Lyceum)</option>
+                <option value="Grade 10">Grade 10 (Senior Lyceum)</option>
+                <option value="Grade 11">Grade 11 (IB Diploma)</option>
+              </select>
+            </div>
+            <div>
+              <label class="block font-mono text-xs uppercase mb-1">Attendance Type</label>
+              <select class="w-full px-4 py-2.5 border border-slate-300 text-xs focus:outline-none focus:border-nordic-black bg-white rounded-none">
+                <option value="Day">Day Student</option>
+                <option value="Boarding">Full Residential Boarding</option>
+              </select>
+            </div>
+          </div>
+
+          <div>
+            <label class="block font-mono text-xs uppercase mb-1">Questions or Academic Passions</label>
+            <textarea rows="3" placeholder="Tell us about your student's areas of focus..." 
+                      class="w-full px-4 py-2.5 border border-slate-300 text-xs focus:outline-none focus:border-nordic-black rounded-none"></textarea>
+          </div>
+
+          <button type="submit" class="w-full py-3.5 bg-nordic-black text-white font-mono text-xs uppercase tracking-wider font-bold hover:bg-slate-800 transition-colors">
+            Submit Admissions Inquiry
+          </button>
+        </form>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Clean Swiss Minimal Footer -->
+  <footer class="border-t border-nordic-border py-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-12 flex flex-col sm:flex-row items-center justify-between gap-6 text-xs font-mono text-slate-500">
+      <div>
+        &copy; 2026 Nordic International Academy &bull; Form &bull; Function &bull; Intellect
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="index.html" class="hover:text-nordic-black">&larr; Compare All Hub</a>
+        <a href="variant-editorial-ivy.html" class="hover:text-nordic-black">Variant 2 &rarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Floating Switcher -->
+  <script src="assets/js/variant-switcher.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

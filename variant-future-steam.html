@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nexus Horizon Academy | Future STEAM Minimalist Design Variant</title>
+  <meta name="description" content="Nexus Horizon Academy - A future-forward minimalist school pioneering artificial intelligence, biotechnology, computational design, and international scholarship.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            future: {
+              obsidian: '#090D16',
+              surface: '#0F172A',
+              card: '#131D31',
+              border: '#1E293B',
+              indigo: '#6366F1',
+              cyan: '#06B6D4',
+              emerald: '#10B981',
+            }
+          },
+          fontFamily: {
+            heading: ['"Outfit"', 'sans-serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="assets/css/variants.css">
+</head>
+<body class="bg-future-obsidian text-slate-100 antialiased selection:bg-future-indigo selection:text-white pb-24">
+
+  <!-- Minimal Dark Navigation -->
+  <header class="border-b border-future-border sticky top-0 z-40 bg-future-obsidian/90 backdrop-blur-md">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-20">
+      
+      <!-- Brand Logo -->
+      <a href="variant-future-steam.html" class="flex items-center gap-3">
+        <div class="w-9 h-9 rounded-xl bg-gradient-to-tr from-future-indigo to-future-cyan p-0.5 shadow-lg shadow-indigo-500/20">
+          <div class="w-full h-full bg-future-obsidian rounded-[10px] flex items-center justify-center">
+            <i data-lucide="cpu" class="w-4 h-4 text-future-cyan"></i>
+          </div>
+        </div>
+        <div>
+          <span class="font-heading font-extrabold text-lg tracking-tight text-white block leading-none">Nexus Horizon</span>
+          <span class="text-[10px] tracking-widest text-future-cyan uppercase font-mono">STEAM Academy // Co-Ed 6-12</span>
+        </div>
+      </a>
+
+      <!-- Minimal Navigation Links -->
+      <nav class="hidden md:flex items-center gap-7 text-xs font-semibold text-slate-400">
+        <a href="#labs" class="hover:text-white transition-colors">Research Labs</a>
+        <a href="#curriculum" class="hover:text-white transition-colors">Curriculum</a>
+        <a href="#metrics" class="hover:text-white transition-colors">Placements</a>
+        <a href="#campus" class="hover:text-white transition-colors">Maker Spaces</a>
+        <a href="#admissions" class="hover:text-white transition-colors">Admissions</a>
+      </nav>
+
+      <!-- Minimalist CTA -->
+      <div class="flex items-center gap-3">
+        <a href="#admissions" class="px-5 py-2.5 rounded-xl bg-gradient-to-r from-future-indigo to-future-cyan text-white text-xs font-bold uppercase tracking-wider shadow hover:opacity-90 transition-opacity">
+          Apply Online
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero Section (Future Minimalist) -->
+  <section class="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+    <div class="grid lg:grid-cols-12 gap-12 items-center">
+      
+      <div class="lg:col-span-7 space-y-6">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-future-indigo/10 border border-future-indigo/30 text-future-indigo text-xs font-mono">
+          <span class="w-1.5 h-1.5 rounded-full bg-future-cyan animate-pulse"></span>
+          2027 Cohort Applications Open &bull; AI, Biotech &amp; Space Systems
+        </div>
+
+        <h1 class="text-4xl sm:text-6xl font-heading font-extrabold tracking-tight text-white leading-[1.1]">
+          Designing the<br>
+          <span class="text-transparent bg-clip-text bg-gradient-to-r from-future-cyan via-future-indigo to-purple-400">Next Frontier</span><br>
+          of Human Inquiry.
+        </h1>
+
+        <p class="text-slate-400 text-base sm:text-lg font-light leading-relaxed max-w-xl">
+          At Nexus Horizon, scholars do not merely memorize existing science—they build what is next. From autonomous drone navigation to molecular genetic sequencers, secondary education meets doctoral-level laboratory inquiry.
+        </p>
+
+        <div class="pt-2 flex flex-wrap items-center gap-4 text-xs font-semibold">
+          <a href="#admissions" class="px-7 py-3.5 rounded-xl bg-future-indigo hover:bg-indigo-500 text-white font-bold uppercase tracking-wider transition-colors shadow-lg shadow-indigo-500/25">
+            Book Lab Discovery Visit
+          </a>
+          <a href="#labs" class="px-7 py-3.5 rounded-xl bg-future-surface border border-future-border text-slate-300 hover:text-white transition-colors">
+            Explore 4 Core Labs &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Hero Visual Card -->
+      <div class="lg:col-span-5">
+        <div class="relative rounded-3xl overflow-hidden border border-future-border bg-future-surface shadow-2xl p-2">
+          <div class="rounded-2xl overflow-hidden relative aspect-[4/3]">
+            <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" 
+                 alt="Robotics and Engineering Research at Nexus Horizon" 
+                 class="w-full h-full object-cover">
+            <div class="absolute inset-0 bg-gradient-to-t from-future-obsidian via-transparent to-transparent"></div>
+            <div class="absolute bottom-4 left-4 right-4 p-4 rounded-xl bg-future-obsidian/80 backdrop-blur-md border border-future-border flex items-center justify-between">
+              <div>
+                <p class="text-xs font-bold text-white">Advanced Robotics Lab</p>
+                <p class="text-[11px] text-future-cyan font-mono">FIRST World Champs &bull; Autonomous AI</p>
+              </div>
+              <span class="px-2 py-1 rounded bg-future-emerald/20 text-future-emerald text-[10px] font-mono font-bold">
+                Active 24/7
+              </span>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Metrics Dashboard Grid -->
+  <section id="metrics" class="max-w-7xl mx-auto px-6 lg:px-8 py-12 border-y border-future-border">
+    <div class="grid grid-cols-2 md:grid-cols-4 gap-6">
+      
+      <div class="p-6 rounded-2xl bg-future-surface border border-future-border">
+        <span class="text-xs font-mono text-future-cyan block">METRIC // 01</span>
+        <div class="text-3xl sm:text-4xl font-heading font-extrabold text-white mt-1">100%</div>
+        <p class="text-xs text-slate-400 mt-1">Top STEM University Placement</p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-future-surface border border-future-border">
+        <span class="text-xs font-mono text-future-cyan block">METRIC // 02</span>
+        <div class="text-3xl sm:text-4xl font-heading font-extrabold text-white mt-1">18</div>
+        <p class="text-xs text-slate-400 mt-1">High School Student Patents Filed</p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-future-surface border border-future-border">
+        <span class="text-xs font-mono text-future-cyan block">METRIC // 03</span>
+        <div class="text-3xl sm:text-4xl font-heading font-extrabold text-white mt-1">$24M</div>
+        <p class="text-xs text-slate-400 mt-1">Endowed Lab &amp; Research Fund</p>
+      </div>
+
+      <div class="p-6 rounded-2xl bg-future-surface border border-future-border">
+        <span class="text-xs font-mono text-future-cyan block">METRIC // 04</span>
+        <div class="text-3xl sm:text-4xl font-heading font-extrabold text-white mt-1">1:7</div>
+        <p class="text-xs text-slate-400 mt-1">Research Fellow to Scholar Ratio</p>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- The 4 Core Research Institutes (Minimalist Cards) -->
+  <section id="labs" class="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+    <div class="mb-14 max-w-2xl">
+      <span class="text-xs font-mono uppercase tracking-widest text-future-cyan">// Research Infrastructure</span>
+      <h2 class="text-3xl sm:text-4xl font-heading font-bold text-white mt-1">
+        Four Flagship Innovation Centers
+      </h2>
+      <p class="text-slate-400 text-sm mt-2">
+        Students rotate through endowed university-grade centers of discovery alongside visiting professors and researchers.
+      </p>
+    </div>
+
+    <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      
+      <!-- Lab 1 -->
+      <div class="p-6 rounded-3xl bg-future-surface border border-future-border hover:border-future-cyan transition-colors flex flex-col justify-between group">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-future-indigo/20 text-future-indigo flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="bot" class="w-6 h-6"></i>
+          </div>
+          <span class="text-[10px] font-mono text-future-cyan uppercase">Institute 01</span>
+          <h3 class="font-heading font-bold text-lg text-white mt-1">AI &amp; Neural Systems</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            Machine learning modeling, robotics control algorithms, computer vision, and ethics in automated systems.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-future-border mt-4 text-[11px] font-mono text-slate-500">
+          NVIDIA GPU Cluster &bull; ROS2
+        </div>
+      </div>
+
+      <!-- Lab 2 -->
+      <div class="p-6 rounded-3xl bg-future-surface border border-future-border hover:border-future-cyan transition-colors flex flex-col justify-between group">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-future-cyan/20 text-future-cyan flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="dna" class="w-6 h-6"></i>
+          </div>
+          <span class="text-[10px] font-mono text-future-cyan uppercase">Institute 02</span>
+          <h3 class="font-heading font-bold text-lg text-white mt-1">Synthetic Genomics</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            Molecular biology, gene sequencing, bio-materials synthesis, and ethical bioinformatics investigations.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-future-border mt-4 text-[11px] font-mono text-slate-500">
+          Oxford Nanopore Sequencer
+        </div>
+      </div>
+
+      <!-- Lab 3 -->
+      <div class="p-6 rounded-3xl bg-future-surface border border-future-border hover:border-future-cyan transition-colors flex flex-col justify-between group">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-purple-500/20 text-purple-400 flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="orbit" class="w-6 h-6"></i>
+          </div>
+          <span class="text-[10px] font-mono text-future-cyan uppercase">Institute 03</span>
+          <h3 class="font-heading font-bold text-lg text-white mt-1">Astrophysics &amp; Space</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            CubeSat orbital payload engineering, planetary climate simulations, and deep-space telemetry tracking.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-future-border mt-4 text-[11px] font-mono text-slate-500">
+          0.6m Reflector Dome &bull; Radio Array
+        </div>
+      </div>
+
+      <!-- Lab 4 -->
+      <div class="p-6 rounded-3xl bg-future-surface border border-future-border hover:border-future-cyan transition-colors flex flex-col justify-between group">
+        <div>
+          <div class="w-12 h-12 rounded-2xl bg-future-emerald/20 text-future-emerald flex items-center justify-center mb-5 group-hover:scale-110 transition-transform">
+            <i data-lucide="layers" class="w-6 h-6"></i>
+          </div>
+          <span class="text-[10px] font-mono text-future-cyan uppercase">Institute 04</span>
+          <h3 class="font-heading font-bold text-lg text-white mt-1">Computational Design</h3>
+          <p class="text-xs text-slate-400 mt-2 leading-relaxed">
+            Architectural biomimicry, generative manufacturing, CNC prototyping, and immersive spatial computing.
+          </p>
+        </div>
+        <div class="pt-4 border-t border-future-border mt-4 text-[11px] font-mono text-slate-500">
+          5-Axis CNC &bull; SLA 3D Printing
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Lab Photography -->
+  <section id="campus" class="max-w-7xl mx-auto px-6 lg:px-8 py-16 border-t border-future-border">
+    <div class="grid md:grid-cols-3 gap-6">
+      
+      <div class="rounded-3xl overflow-hidden border border-future-border relative h-64 group">
+        <img src="https://images.unsplash.com/photo-1532094349884-543bc11b234d?auto=format&fit=crop&w=800&q=80" 
+             alt="Biotechnology Chemistry Station" 
+             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-future-obsidian via-transparent to-transparent flex items-end p-5">
+          <span class="text-xs font-heading font-bold text-white">Biochemistry Research Core</span>
+        </div>
+      </div>
+
+      <div class="rounded-3xl overflow-hidden border border-future-border relative h-64 group">
+        <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80" 
+             alt="Collaborative Mathematics Discussion" 
+             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-future-obsidian via-transparent to-transparent flex items-end p-5">
+          <span class="text-xs font-heading font-bold text-white">Theoretical Math Seminar</span>
+        </div>
+      </div>
+
+      <div class="rounded-3xl overflow-hidden border border-future-border relative h-64 group">
+        <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80" 
+             alt="Digital Science Archive" 
+             class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500">
+        <div class="absolute inset-0 bg-gradient-to-t from-future-obsidian via-transparent to-transparent flex items-end p-5">
+          <span class="text-xs font-heading font-bold text-white">Quantum Computing Vault</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Future Admissions Form -->
+  <section id="admissions" class="max-w-4xl mx-auto px-6 lg:px-8 py-20">
+    <div class="bg-future-surface rounded-3xl p-8 sm:p-12 border border-future-border shadow-2xl">
+      <div class="text-center space-y-3 mb-8">
+        <span class="text-xs font-mono uppercase tracking-widest text-future-cyan">Admissions 2027</span>
+        <h2 class="text-3xl font-heading font-bold text-white">Request Candidate Assessment</h2>
+        <p class="text-xs text-slate-400 max-w-md mx-auto">
+          We accept candidates with exceptional curiosity in quantitative and natural sciences.
+        </p>
+      </div>
+
+      <form class="space-y-4" onsubmit="event.preventDefault(); alert('Application intake recorded! Welcome to Nexus Horizon.'); this.reset();">
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-mono uppercase text-slate-400 mb-1">Parent Name *</label>
+            <input type="text" required placeholder="Dr. Karen Liu" 
+                   class="w-full px-4 py-3 rounded-xl bg-future-obsidian border border-future-border text-xs text-white focus:outline-none focus:border-future-cyan">
+          </div>
+          <div>
+            <label class="block text-xs font-mono uppercase text-slate-400 mb-1">Email Address *</label>
+            <input type="email" required placeholder="karen@example.com" 
+                   class="w-full px-4 py-3 rounded-xl bg-future-obsidian border border-future-border text-xs text-white focus:outline-none focus:border-future-cyan">
+          </div>
+        </div>
+
+        <div class="grid sm:grid-cols-2 gap-4">
+          <div>
+            <label class="block text-xs font-mono uppercase text-slate-400 mb-1">Student Primary Interest</label>
+            <select class="w-full px-4 py-3 rounded-xl bg-future-obsidian border border-future-border text-xs text-white focus:outline-none focus:border-future-cyan">
+              <option>Artificial Intelligence &amp; Robotics</option>
+              <option>Biotechnology &amp; Molecular Genetics</option>
+              <option>Astrophysics &amp; Space Flight</option>
+              <option>Computational Architecture</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-mono uppercase text-slate-400 mb-1">Grade of Entry</label>
+            <select class="w-full px-4 py-3 rounded-xl bg-future-obsidian border border-future-border text-xs text-white focus:outline-none focus:border-future-cyan">
+              <option>Grade 6–8 (Middle STEAM)</option>
+              <option>Grade 9–10 (Honors Pre-AP)</option>
+              <option>Grade 11–12 (Full IB / Capstone)</option>
+            </select>
+          </div>
+        </div>
+
+        <button type="submit" class="w-full py-4 rounded-xl bg-gradient-to-r from-future-indigo to-future-cyan text-white text-xs font-bold uppercase tracking-wider shadow-lg shadow-indigo-500/20 transition-all">
+          Submit Nexus Horizon Inquiry
+        </button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Clean Future Footer -->
+  <footer class="border-t border-future-border py-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-slate-500 font-mono">
+      <div>
+        &copy; 2026 Nexus Horizon STEAM Academy &bull; Advancing Intellect &bull; JCI &amp; IB World School
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="index.html" class="hover:text-future-cyan">&larr; Compare All Hub</a>
+        <a href="variant-zen-nature.html" class="hover:text-future-cyan">Variant 4 &rarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/variant-switcher.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

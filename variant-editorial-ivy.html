@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Eldridge Collegiate | Warm Editorial Ivy Design Variant</title>
+  <meta name="description" content="Eldridge Collegiate Academy - An editorial, literary minimalist prep school combining century-old scholarship with timeless elegance.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ivy: {
+              green: '#163826',
+              pine: '#0f291a',
+              bronze: '#8c6b32',
+              cream: '#FAF7F2',
+              sand: '#F2ECE1',
+              stone: '#E8DFD1',
+            }
+          },
+          fontFamily: {
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="assets/css/variants.css">
+</head>
+<body class="bg-ivy-cream text-slate-800 antialiased selection:bg-ivy-green selection:text-white pb-24">
+
+  <!-- Minimalist Top Navigation -->
+  <header class="border-b border-ivy-sand sticky top-0 z-40 bg-ivy-cream/95 backdrop-blur-md">
+    <div class="max-w-6xl mx-auto px-6 lg:px-8 flex items-center justify-between h-24">
+      
+      <!-- Brand Crest & Name -->
+      <a href="variant-editorial-ivy.html" class="flex items-center gap-3">
+        <div class="w-10 h-10 rounded-full bg-ivy-green text-amber-200 flex items-center justify-center font-serif text-lg font-bold">
+          E
+        </div>
+        <div>
+          <span class="font-serif text-2xl font-bold tracking-tight text-ivy-pine block leading-none">Eldridge</span>
+          <span class="text-[10px] tracking-widest text-ivy-bronze uppercase font-sans font-semibold">Collegiate &bull; 1888</span>
+        </div>
+      </a>
+
+      <!-- Minimal Navigation Links -->
+      <nav class="hidden md:flex items-center gap-8 text-xs uppercase tracking-widest font-semibold text-slate-600">
+        <a href="#ethos" class="hover:text-ivy-green transition-colors">The Ethos</a>
+        <a href="#harkness" class="hover:text-ivy-green transition-colors">The Seminar</a>
+        <a href="#academics" class="hover:text-ivy-green transition-colors">Studies</a>
+        <a href="#residence" class="hover:text-ivy-green transition-colors">Pastoral Life</a>
+        <a href="#admissions" class="hover:text-ivy-green transition-colors">Admissions</a>
+      </nav>
+
+      <!-- Minimalist CTA -->
+      <div>
+        <a href="#admissions" class="text-xs uppercase tracking-widest font-bold text-ivy-green border-b border-ivy-green pb-0.5 hover:text-ivy-bronze hover:border-ivy-bronze transition-colors">
+          Request Prospectus
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Editorial Hero Section -->
+  <section class="max-w-6xl mx-auto px-6 lg:px-8 pt-16 pb-20">
+    <div class="text-center max-w-3xl mx-auto space-y-6">
+      
+      <span class="text-xs uppercase tracking-widest text-ivy-bronze font-semibold">An Independent Boarding &amp; Day Academy</span>
+      
+      <h1 class="text-4xl sm:text-6xl font-serif font-normal text-ivy-pine leading-[1.15]">
+        A Sanctuary for the<br>
+        <span class="italic font-normal text-ivy-green">Inquiring Mind.</span>
+      </h1>
+
+      <p class="text-slate-600 text-base sm:text-lg font-light leading-relaxed max-w-xl mx-auto">
+        Set amidst the old-growth pines of New England, Eldridge Collegiate preserves an unhurried scholarly sanctuary where literature, mathematics, and moral character thrive.
+      </p>
+
+      <div class="pt-4 flex justify-center gap-4">
+        <a href="#admissions" class="px-8 py-3.5 rounded-full bg-ivy-green hover:bg-ivy-pine text-white text-xs uppercase tracking-wider font-semibold transition-colors">
+          Arrange a Private Visit
+        </a>
+      </div>
+
+    </div>
+
+    <!-- Editorial Image Trio -->
+    <div class="mt-16 grid sm:grid-cols-12 gap-6 items-center">
+      <div class="sm:col-span-7 rounded-2xl overflow-hidden shadow-lg border border-ivy-sand">
+        <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=1200&q=80" 
+             alt="Eldridge Collegiate Quad" 
+             class="w-full h-[420px] object-cover">
+      </div>
+      <div class="sm:col-span-5 space-y-6">
+        <div class="rounded-2xl overflow-hidden shadow border border-ivy-sand">
+          <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80" 
+               alt="Library and Leather Bound Volumes" 
+               class="w-full h-48 object-cover">
+        </div>
+        <div class="p-6 bg-ivy-sand rounded-2xl border border-ivy-stone">
+          <p class="font-serif italic text-sm text-ivy-pine leading-relaxed">
+            "To read deeply, to listen intently, and to act with unwavering integrity—this is the singular compass of an Eldridge scholar."
+          </p>
+          <span class="block text-[11px] font-sans font-bold uppercase tracking-wider text-ivy-bronze mt-2">
+            The Headmaster’s Inscription
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Ethos & Quiet Intellect -->
+  <section id="ethos" class="py-20 bg-ivy-sand border-y border-ivy-stone">
+    <div class="max-w-4xl mx-auto px-6 lg:px-8 text-center space-y-8">
+      
+      <span class="text-xs uppercase tracking-widest text-ivy-bronze font-semibold">The Eldridge Ethos</span>
+      
+      <h2 class="text-3xl sm:text-5xl font-serif text-ivy-pine leading-tight">
+        "Non Sibi Solum"<br>
+        <span class="text-xl sm:text-2xl italic font-normal text-slate-600 block mt-2">Not for oneself alone.</span>
+      </h2>
+
+      <p class="text-slate-600 text-base sm:text-lg leading-relaxed font-light">
+        In an era of relentless distraction, Eldridge offers deep cognitive stillness. We cultivate young scholars who do not skim life, but interrogate it. From classical translation to theoretical physics, our students learn the quiet joy of sustained attention.
+      </p>
+
+      <div class="grid grid-cols-3 gap-6 pt-6 border-t border-ivy-stone text-center">
+        <div>
+          <span class="text-3xl font-serif font-bold text-ivy-pine">1:8</span>
+          <span class="block text-xs uppercase text-slate-500 mt-1">Tutorial Ratio</span>
+        </div>
+        <div>
+          <span class="text-3xl font-serif font-bold text-ivy-pine">138</span>
+          <span class="block text-xs uppercase text-slate-500 mt-1">Years of Legacy</span>
+        </div>
+        <div>
+          <span class="text-3xl font-serif font-bold text-ivy-pine">100%</span>
+          <span class="block text-xs uppercase text-slate-500 mt-1">University Acceptance</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- The Harkness Seminar -->
+  <section id="harkness" class="py-20 max-w-6xl mx-auto px-6 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-12 items-center">
+      
+      <div class="lg:col-span-6 space-y-6">
+        <span class="text-xs uppercase tracking-widest text-ivy-bronze font-semibold">Pedagogy</span>
+        
+        <h2 class="text-3xl sm:text-4xl font-serif text-ivy-pine">
+          The Oval Table &amp;<br>
+          <span class="italic font-normal">Socratic Discourse</span>
+        </h2>
+
+        <p class="text-slate-600 text-sm leading-relaxed">
+          At Eldridge, education is not a lecture given from a podium. It is a shared expedition. Around polished mahogany tables, twelve students and an endowed tutor examine original texts, formulate philosophical proofs, and challenge premises with civility.
+        </p>
+
+        <div class="space-y-3 pt-2 text-xs text-slate-700">
+          <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-ivy-green"></span>
+            <span>No lecture halls; all humanities taught at discussion tables</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-ivy-green"></span>
+            <span>Latin, Ancient Greek, French, German, and Mandarin immersion</span>
+          </div>
+          <div class="flex items-center gap-2">
+            <span class="w-1.5 h-1.5 rounded-full bg-ivy-green"></span>
+            <span>Supervised 4,000-word Senior Thesis defended before faculty</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6">
+        <div class="rounded-3xl overflow-hidden shadow-xl border border-ivy-sand">
+          <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?auto=format&fit=crop&w=800&q=80" 
+               alt="Seminar Table at Eldridge Collegiate" 
+               class="w-full h-[420px] object-cover">
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Academics & Studies -->
+  <section id="academics" class="py-20 bg-white border-y border-ivy-sand">
+    <div class="max-w-6xl mx-auto px-6 lg:px-8">
+      
+      <div class="text-center max-w-2xl mx-auto space-y-3 mb-14">
+        <span class="text-xs uppercase tracking-widest text-ivy-bronze font-semibold">Academic Divisions</span>
+        <h2 class="text-3xl sm:text-4xl font-serif text-ivy-pine">Divisions of Study</h2>
+      </div>
+
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <div class="p-8 bg-ivy-cream rounded-2xl border border-ivy-sand space-y-4">
+          <span class="text-xs font-serif font-bold text-ivy-bronze">Form I &amp; II &bull; Grades 6–8</span>
+          <h3 class="font-serif text-xl font-bold text-ivy-pine">The Junior House</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Inquiry-based mathematics, foundational literature, natural biology field studies, and studio music.
+          </p>
+        </div>
+
+        <div class="p-8 bg-ivy-cream rounded-2xl border border-ivy-sand space-y-4">
+          <span class="text-xs font-serif font-bold text-ivy-bronze">Form III &amp; IV &bull; Grades 9–10</span>
+          <h3 class="font-serif text-xl font-bold text-ivy-pine">The Classical Middle</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Intensive Harkness immersion, Euclidean geometry, laboratory chemistry, and world history seminars.
+          </p>
+        </div>
+
+        <div class="p-8 bg-ivy-cream rounded-2xl border border-ivy-sand space-y-4">
+          <span class="text-xs font-serif font-bold text-ivy-bronze">Form V &amp; VI &bull; Grades 11–12</span>
+          <h3 class="font-serif text-xl font-bold text-ivy-pine">The Senior Lyceum (IB)</h3>
+          <p class="text-xs text-slate-600 leading-relaxed">
+            Full International Baccalaureate Diploma Programme, university counseling, and senior thesis colloquium.
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Pastoral Life & Residential Houses -->
+  <section id="residence" class="py-20 max-w-6xl mx-auto px-6 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-10 items-center">
+      
+      <div class="lg:col-span-6 rounded-3xl overflow-hidden shadow-lg border border-ivy-sand">
+        <img src="https://images.unsplash.com/photo-1523240795612-9a054b0db644?auto=format&fit=crop&w=800&q=80" 
+             alt="Students Relaxing in Historic House Common Room" 
+             class="w-full h-[400px] object-cover">
+      </div>
+
+      <div class="lg:col-span-6 space-y-5">
+        <span class="text-xs uppercase tracking-widest text-ivy-bronze font-semibold">Belonging &amp; Community</span>
+        <h2 class="text-3xl sm:text-4xl font-serif text-ivy-pine">
+          The Four Historic Houses
+        </h2>
+        <p class="text-slate-600 text-sm leading-relaxed">
+          Residential life at Eldridge is organized into four storied Houses: *Cromwell*, *Somerset*, *Waverley*, and *Pembroke*. Housemasters live within each residence, creating a safe, loving family hearth where lifelong companionships are formed.
+        </p>
+        <div class="pt-2">
+          <a href="#admissions" class="text-xs uppercase tracking-widest font-bold text-ivy-green border-b border-ivy-green pb-0.5">
+            Discover Residential Boarding Life &rarr;
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Admissions & Inquiry (Editorial Minimalist) -->
+  <section id="admissions" class="py-20 bg-ivy-sand border-t border-ivy-stone">
+    <div class="max-w-3xl mx-auto px-6 text-center space-y-6">
+      
+      <span class="text-xs uppercase tracking-widest text-ivy-bronze font-semibold">Admissions &bull; Class of 2027</span>
+      <h2 class="text-3xl sm:text-4xl font-serif text-ivy-pine">Begin Your Family’s Inquiry</h2>
+      
+      <p class="text-slate-600 text-sm max-w-lg mx-auto">
+        We welcome applications for Day and 7-Day Boarding placement. Every candidate is evaluated with individual care.
+      </p>
+
+      <form class="bg-white p-8 rounded-3xl border border-ivy-stone shadow-sm space-y-4 text-left max-w-lg mx-auto" onsubmit="event.preventDefault(); alert('Thank you. The Eldridge Admissions Office will be in touch shortly.'); this.reset();">
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Parent or Guardian *</label>
+          <input type="text" required placeholder="Eleanor Vance" class="w-full px-4 py-2.5 rounded-xl border border-ivy-stone text-xs focus:outline-none focus:border-ivy-green">
+        </div>
+        <div>
+          <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Email Address *</label>
+          <input type="email" required placeholder="eleanor@domain.com" class="w-full px-4 py-2.5 rounded-xl border border-ivy-stone text-xs focus:outline-none focus:border-ivy-green">
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Grade Level</label>
+            <select class="w-full px-3 py-2.5 rounded-xl border border-ivy-stone text-xs bg-white">
+              <option>Grade 6–8</option>
+              <option selected>Grade 9–10</option>
+              <option>Grade 11–12 (IB)</option>
+            </select>
+          </div>
+          <div>
+            <label class="block text-xs font-semibold text-slate-700 uppercase mb-1">Enrollment</label>
+            <select class="w-full px-3 py-2.5 rounded-xl border border-ivy-stone text-xs bg-white">
+              <option>Residential Boarding</option>
+              <option>Day School</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit" class="w-full py-3.5 rounded-xl bg-ivy-green hover:bg-ivy-pine text-white text-xs uppercase tracking-wider font-bold transition-colors">
+          Submit Admissions Inquiry
+        </button>
+      </form>
+
+    </div>
+  </section>
+
+  <!-- Editorial Footer -->
+  <footer class="py-12 bg-ivy-cream border-t border-ivy-sand">
+    <div class="max-w-6xl mx-auto px-6 flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-slate-500">
+      <div class="font-serif italic text-sm text-ivy-pine">
+        Eldridge Collegiate Academy &bull; Est. 1888
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="index.html" class="hover:text-ivy-green">&larr; Compare All Hub</a>
+        <a href="variant-future-steam.html" class="hover:text-ivy-green">Variant 3 &rarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/variant-switcher.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>

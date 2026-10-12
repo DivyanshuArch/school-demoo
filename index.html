@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Website Design Concepts | Compare All Variants</title>
+  <meta name="description" content="Compare all design variants of high-end school websites: Swiss Minimal, Warm Editorial Ivy, Future STEAM, Organic Zen, and Classical Flagship Prep.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: {
+              navy: '#0b192e',
+              dark: '#08111e',
+              gold: '#d8af3a',
+              amber: '#f59e0b',
+            }
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            serif: ['"Playfair Display"', 'Georgia', 'serif'],
+            space: ['"Space Grotesk"', 'sans-serif'],
+            outfit: ['"Outfit"', 'sans-serif'],
+            fraunces: ['"Fraunces"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@0,600;0,700;1,400&family=Space+Grotesk:wght@500;600;700&family=Outfit:wght@500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <link rel="stylesheet" href="assets/css/variants.css">
+</head>
+<body class="bg-slate-50 text-slate-900 antialiased selection:bg-slate-900 selection:text-white pb-24">
+
+  <!-- Executive Client Header -->
+  <header class="bg-white/95 backdrop-blur-md border-b border-slate-200 sticky top-0 z-40">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 flex items-center justify-between h-20">
+      
+      <!-- Brand & Studio Title -->
+      <a href="index.html" class="flex items-center gap-3.5 group">
+        <div class="w-10 h-10 rounded-2xl bg-slate-950 text-amber-400 flex items-center justify-center font-bold text-base shadow-sm group-hover:scale-105 transition-transform">
+          <i data-lucide="layers" class="w-5 h-5"></i>
+        </div>
+        <div>
+          <span class="font-extrabold text-base sm:text-lg text-slate-900 leading-tight block">
+            School Design Showcase
+          </span>
+          <span class="text-xs text-slate-500 font-medium block">
+            Client Comparison &amp; Variant Portal
+          </span>
+        </div>
+      </a>
+
+      <!-- Quick Section Links -->
+      <nav class="hidden md:flex items-center gap-7 text-xs uppercase tracking-wider font-bold text-slate-600">
+        <a href="#variants" class="hover:text-blue-600 transition-colors">Explore All Concepts</a>
+        <a href="#matrix" class="hover:text-blue-600 transition-colors">Comparison Matrix</a>
+        <a href="#architecture" class="hover:text-blue-600 transition-colors">Architecture &amp; Code</a>
+      </nav>
+
+      <!-- Badge CTA -->
+      <div class="flex items-center gap-3">
+        <span class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1 rounded-full bg-emerald-50 text-emerald-700 border border-emerald-200 text-xs font-semibold">
+          <span class="w-1.5 h-1.5 rounded-full bg-emerald-500 animate-pulse"></span>
+          5 Live Variants Ready
+        </span>
+        <a href="#variants" class="px-4 py-2 rounded-xl bg-slate-950 hover:bg-slate-800 text-white text-xs font-bold uppercase tracking-wider transition-colors shadow">
+          View Variants
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- Hero Section -->
+  <section class="max-w-7xl mx-auto px-6 lg:px-8 pt-16 pb-14 text-center">
+    <div class="max-w-3xl mx-auto space-y-5">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-slate-100 border border-slate-200 text-slate-700 text-xs font-bold uppercase tracking-wider">
+        <i data-lucide="sparkles" class="w-3.5 h-3.5 text-amber-500"></i>
+        Bespoke Educational Web Design Collection
+      </div>
+
+      <h1 class="text-4xl sm:text-6xl font-extrabold text-slate-900 tracking-tight leading-[1.12]">
+        Select the Design Philosophy That Embodies Your School.
+      </h1>
+
+      <p class="text-slate-600 text-base sm:text-lg font-normal leading-relaxed max-w-2xl mx-auto">
+        Every educational institution carries a singular soul. Compare five live, fully functional website concepts tailored for premier independent academies—from ultra-clean Nordic minimalism to heritage Ivy League elegance.
+      </p>
+
+      <!-- Key Portal Stats -->
+      <div class="pt-6 grid grid-cols-2 sm:grid-cols-4 gap-4 max-w-2xl mx-auto text-left">
+        <div class="p-3.5 bg-white rounded-2xl border border-slate-200 shadow-sm">
+          <span class="block text-2xl font-extrabold text-slate-900">5</span>
+          <span class="text-xs text-slate-500 font-medium">Distinct Aesthetics</span>
+        </div>
+        <div class="p-3.5 bg-white rounded-2xl border border-slate-200 shadow-sm">
+          <span class="block text-2xl font-extrabold text-slate-900">100%</span>
+          <span class="text-xs text-slate-500 font-medium">Responsive &amp; Mobile</span>
+        </div>
+        <div class="p-3.5 bg-white rounded-2xl border border-slate-200 shadow-sm">
+          <span class="block text-2xl font-extrabold text-slate-900">0</span>
+          <span class="text-xs text-slate-500 font-medium">Build Dependencies</span>
+        </div>
+        <div class="p-3.5 bg-white rounded-2xl border border-slate-200 shadow-sm">
+          <span class="block text-2xl font-extrabold text-slate-900">Live</span>
+          <span class="text-xs text-slate-500 font-medium">In-Page Previews</span>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Interactive Filter Tabs -->
+  <section class="max-w-7xl mx-auto px-6 lg:px-8 pb-8">
+    <div class="flex items-center justify-center gap-2 overflow-x-auto pb-2">
+      <button data-filter-card="all" class="filter-tab-btn active px-4 py-2 rounded-full text-xs font-bold bg-slate-900 text-white transition-colors">
+        All 5 Concepts
+      </button>
+      <button data-filter-card="minimal" class="filter-tab-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-slate-600 border border-slate-200 hover:bg-slate-100 transition-colors">
+        Minimalist Focus
+      </button>
+      <button data-filter-card="heritage" class="filter-tab-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-slate-600 border border-slate-200 hover:bg-slate-100 transition-colors">
+        Heritage &amp; Ivy
+      </button>
+      <button data-filter-card="future" class="filter-tab-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-slate-600 border border-slate-200 hover:bg-slate-100 transition-colors">
+        STEAM &amp; Tech
+      </button>
+      <button data-filter-card="nature" class="filter-tab-btn px-4 py-2 rounded-full text-xs font-bold bg-white text-slate-600 border border-slate-200 hover:bg-slate-100 transition-colors">
+        Organic &amp; Nature
+      </button>
+    </div>
+  </section>
+
+  <!-- All 5 Variants Cards Grid -->
+  <section id="variants" class="max-w-7xl mx-auto px-6 lg:px-8 py-4">
+    <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+      
+      <!-- Variant 1: Swiss / Nordic Minimal -->
+      <div class="variant-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="minimal">
+        <div>
+          <!-- Header Bar -->
+          <div class="p-6 border-b border-slate-100 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-mono font-bold text-blue-600 uppercase tracking-wider">Concept 01 &bull; Minimalist</span>
+              <h3 class="text-xl font-bold font-['Space_Grotesk'] text-slate-900 mt-0.5">Swiss / Nordic Minimal</h3>
+              <p class="text-xs text-slate-500 font-medium">Nordic International Academy</p>
+            </div>
+            <!-- Swatches -->
+            <div class="flex gap-1.5" title="Palette: Nordic Black, Cobalt Blue, Pure White">
+              <span class="w-4 h-4 rounded-full bg-slate-950 border border-slate-300"></span>
+              <span class="w-4 h-4 rounded-full bg-blue-600"></span>
+              <span class="w-4 h-4 rounded-full bg-white border border-slate-300"></span>
+            </div>
+          </div>
+
+          <!-- Preview Visual -->
+          <div class="p-6 space-y-4">
+            <a href="variant-swiss-minimal.html" class="block rounded-2xl overflow-hidden border border-slate-200 aspect-[16/10] relative bg-slate-100 group/img">
+              <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80" 
+                   alt="Nordic Minimal Preview" class="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-slate-950/20 group-hover/img:bg-transparent transition-colors"></div>
+              <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-black/80 text-white font-mono text-[10px] uppercase backdrop-blur-sm">
+                Geometric Grid &bull; Space Grotesk
+              </span>
+            </a>
+
+            <!-- Description -->
+            <div class="space-y-2 text-xs text-slate-600">
+              <p class="font-medium text-slate-900">
+                <strong>Aesthetic:</strong> Extreme clarity, 1px micro-borders, stark monochrome contrast, and electric cobalt blue focal points.
+              </p>
+              <p class="text-slate-500">
+                <strong>Best For:</strong> Progressive international academies, Scandinavian schools, and modern IB institutions prioritizing intellectual autonomy.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action CTAs -->
+        <div class="p-6 pt-0">
+          <a href="variant-swiss-minimal.html" 
+             class="block w-full py-3.5 rounded-xl bg-slate-950 hover:bg-blue-600 text-white text-center text-xs font-bold uppercase tracking-wider transition-colors shadow">
+            Open Nordic Minimal Website &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Variant 2: Warm Editorial Ivy -->
+      <div class="variant-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="heritage minimal">
+        <div>
+          <!-- Header Bar -->
+          <div class="p-6 border-b border-slate-100 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-serif font-bold text-amber-800 uppercase tracking-wider">Concept 02 &bull; Literary</span>
+              <h3 class="text-xl font-bold font-['Playfair_Display'] text-slate-900 mt-0.5">Warm Editorial Ivy</h3>
+              <p class="text-xs text-slate-500 font-medium">Eldridge Collegiate Academy</p>
+            </div>
+            <!-- Swatches -->
+            <div class="flex gap-1.5" title="Palette: Racing Green, Warm Alabaster, Warm Bronze">
+              <span class="w-4 h-4 rounded-full bg-[#163826]"></span>
+              <span class="w-4 h-4 rounded-full bg-[#FAF7F2] border border-slate-300"></span>
+              <span class="w-4 h-4 rounded-full bg-[#8c6b32]"></span>
+            </div>
+          </div>
+
+          <!-- Preview Visual -->
+          <div class="p-6 space-y-4">
+            <a href="variant-editorial-ivy.html" class="block rounded-2xl overflow-hidden border border-slate-200 aspect-[16/10] relative bg-[#FAF7F2] group/img">
+              <img src="https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=800&q=80" 
+                   alt="Editorial Ivy Preview" class="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-[#163826]/15 group-hover/img:bg-transparent transition-colors"></div>
+              <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-[#163826]/90 text-amber-200 font-serif text-[10px] backdrop-blur-sm">
+                Magazine Layout &bull; Playfair Display
+              </span>
+            </a>
+
+            <!-- Description -->
+            <div class="space-y-2 text-xs text-slate-600">
+              <p class="font-medium text-slate-900">
+                <strong>Aesthetic:</strong> High-fashion literary serif, warm alabaster stone palette, magazine drop caps, and Harkness table elegance.
+              </p>
+              <p class="text-slate-500">
+                <strong>Best For:</strong> New England prep schools, British boarding academies, and institutions celebrating century-old humanistic traditions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action CTAs -->
+        <div class="p-6 pt-0">
+          <a href="variant-editorial-ivy.html" 
+             class="block w-full py-3.5 rounded-xl bg-[#163826] hover:bg-[#0f291a] text-white text-center text-xs font-bold uppercase tracking-wider transition-colors shadow">
+            Open Editorial Ivy Website &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Variant 3: Future STEAM & Innovation -->
+      <div class="variant-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="future minimal">
+        <div>
+          <!-- Header Bar -->
+          <div class="p-6 border-b border-slate-100 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-mono font-bold text-cyan-600 uppercase tracking-wider">Concept 03 &bull; Futuristic</span>
+              <h3 class="text-xl font-bold font-['Outfit'] text-slate-900 mt-0.5">Future STEAM Academy</h3>
+              <p class="text-xs text-slate-500 font-medium">Nexus Horizon STEAM Academy</p>
+            </div>
+            <!-- Swatches -->
+            <div class="flex gap-1.5" title="Palette: Obsidian, Indigo, Cyber Cyan">
+              <span class="w-4 h-4 rounded-full bg-[#090D16]"></span>
+              <span class="w-4 h-4 rounded-full bg-[#6366F1]"></span>
+              <span class="w-4 h-4 rounded-full bg-[#06B6D4]"></span>
+            </div>
+          </div>
+
+          <!-- Preview Visual -->
+          <div class="p-6 space-y-4">
+            <a href="variant-future-steam.html" class="block rounded-2xl overflow-hidden border border-slate-200 aspect-[16/10] relative bg-[#090D16] group/img">
+              <img src="https://images.unsplash.com/photo-1581092160607-ee22621dd758?auto=format&fit=crop&w=800&q=80" 
+                   alt="Future STEAM Preview" class="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-[#090D16]/40 group-hover/img:bg-transparent transition-colors"></div>
+              <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-black/80 text-cyan-300 font-mono text-[10px] backdrop-blur-sm">
+                Obsidian Dark Mode &bull; Outfit Font
+              </span>
+            </a>
+
+            <!-- Description -->
+            <div class="space-y-2 text-xs text-slate-600">
+              <p class="font-medium text-slate-900">
+                <strong>Aesthetic:</strong> Deep obsidian slate, neon indigo and cyan micro-accents, modular dashboard cards, and robotics metrics.
+              </p>
+              <p class="text-slate-500">
+                <strong>Best For:</strong> Advanced science institutes, polytechnic high schools, coding academies, and university-affiliated STEAM schools.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action CTAs -->
+        <div class="p-6 pt-0">
+          <a href="variant-future-steam.html" 
+             class="block w-full py-3.5 rounded-xl bg-indigo-600 hover:bg-indigo-700 text-white text-center text-xs font-bold uppercase tracking-wider transition-colors shadow">
+            Open Future STEAM Website &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Variant 4: Organic Zen & Nature -->
+      <div class="variant-card bg-white rounded-3xl overflow-hidden border border-slate-200 shadow-sm hover:shadow-xl transition-all flex flex-col justify-between group" data-category="nature minimal">
+        <div>
+          <!-- Header Bar -->
+          <div class="p-6 border-b border-slate-100 flex items-center justify-between">
+            <div>
+              <span class="text-[11px] font-serif font-bold text-emerald-800 uppercase tracking-wider">Concept 04 &bull; Organic</span>
+              <h3 class="text-xl font-bold font-['Fraunces'] text-slate-900 mt-0.5">Organic Zen &amp; Nature</h3>
+              <p class="text-xs text-slate-500 font-medium">Sylvan Crest Forest &amp; Arts Academy</p>
+            </div>
+            <!-- Swatches -->
+            <div class="flex gap-1.5" title="Palette: Forest Green, Eucalyptus Leaf, Parchment Sand">
+              <span class="w-4 h-4 rounded-full bg-[#264234]"></span>
+              <span class="w-4 h-4 rounded-full bg-[#EBF2ED] border border-slate-300"></span>
+              <span class="w-4 h-4 rounded-full bg-[#FDFBF7] border border-slate-300"></span>
+            </div>
+          </div>
+
+          <!-- Preview Visual -->
+          <div class="p-6 space-y-4">
+            <a href="variant-zen-nature.html" class="block rounded-2xl overflow-hidden border border-slate-200 aspect-[16/10] relative bg-[#FDFBF7] group/img">
+              <img src="https://images.unsplash.com/photo-1509062522246-3755977927d7?auto=format&fit=crop&w=800&q=80" 
+                   alt="Organic Zen Preview" class="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-[#264234]/15 group-hover/img:bg-transparent transition-colors"></div>
+              <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-[#264234]/90 text-white font-serif text-[10px] backdrop-blur-sm">
+                Earth &amp; Forest &bull; Fraunces Font
+              </span>
+            </a>
+
+            <!-- Description -->
+            <div class="space-y-2 text-xs text-slate-600">
+              <p class="font-medium text-slate-900">
+                <strong>Aesthetic:</strong> Soothing sage leaf tones, warm sand parchment, rounded organic contours, and mindfulness living atmosphere.
+              </p>
+              <p class="text-slate-500">
+                <strong>Best For:</strong> Forest schools, progressive arts academies, eco-stewardship campuses, and holistic child wellness institutions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action CTAs -->
+        <div class="p-6 pt-0">
+          <a href="variant-zen-nature.html" 
+             class="block w-full py-3.5 rounded-xl bg-[#264234] hover:bg-[#192E24] text-white text-center text-xs font-bold uppercase tracking-wider transition-colors shadow">
+            Open Organic Zen Website &rarr;
+          </a>
+        </div>
+      </div>
+
+      <!-- Variant 5: Classical Flagship Prep -->
+      <div class="variant-card bg-white rounded-3xl overflow-hidden border-2 border-amber-400 shadow-md hover:shadow-xl transition-all flex flex-col justify-between group md:col-span-2 lg:col-span-2" data-category="heritage">
+        <div>
+          <!-- Header Bar -->
+          <div class="p-6 border-b border-slate-100 flex items-center justify-between">
+            <div>
+              <div class="flex items-center gap-2">
+                <span class="text-[11px] font-bold text-amber-600 uppercase tracking-wider">Concept 05 &bull; Benchmark Flagship</span>
+                <span class="px-2 py-0.5 rounded-full bg-amber-100 text-amber-800 text-[10px] font-bold uppercase">Comprehensive</span>
+              </div>
+              <h3 class="text-2xl font-bold font-serif text-slate-900 mt-0.5">Meridian Crest Flagship Academy</h3>
+              <p class="text-xs text-slate-500 font-medium">Full Prep School Experience with Multi-Page Portals</p>
+            </div>
+            <!-- Swatches -->
+            <div class="flex gap-1.5" title="Palette: Collegiate Navy, Warm Gold, Soft Cream">
+              <span class="w-4 h-4 rounded-full bg-[#060d17]"></span>
+              <span class="w-4 h-4 rounded-full bg-[#d8af3a]"></span>
+              <span class="w-4 h-4 rounded-full bg-[#FAF8F5] border border-slate-300"></span>
+            </div>
+          </div>
+
+          <!-- Preview Visual & Features -->
+          <div class="p-6 grid sm:grid-cols-12 gap-6 items-center">
+            <a href="flagship-prep.html" class="sm:col-span-6 block rounded-2xl overflow-hidden border border-slate-200 aspect-[16/10] relative group/img">
+              <img src="https://images.unsplash.com/photo-1541339907198-e08756dedf3f?auto=format&fit=crop&w=800&q=80" 
+                   alt="Flagship Prep Preview" class="w-full h-full object-cover group-hover/img:scale-105 transition-transform duration-500">
+              <div class="absolute inset-0 bg-[#060d17]/25 group-hover/img:bg-transparent transition-colors"></div>
+              <span class="absolute bottom-3 left-3 px-2.5 py-1 rounded bg-[#060d17]/90 text-amber-300 font-serif text-[10px] backdrop-blur-sm">
+                Collegiate Gothic &bull; Cormorant &amp; Cinzel
+              </span>
+            </a>
+
+            <div class="sm:col-span-6 space-y-3 text-xs text-slate-600">
+              <p class="font-medium text-slate-900">
+                <strong>Aesthetic:</strong> Prestigious collegiate navy with regal gold leaf accents, historic 4-house system, and full multi-page academic architecture.
+              </p>
+              <ul class="space-y-1.5 text-slate-600">
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> Interactive Day vs. Boarding tuition calculator</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> Dedicated Academics &amp; Admissions pages</li>
+                <li class="flex items-center gap-2"><i data-lucide="check" class="w-3.5 h-3.5 text-amber-500"></i> 360° virtual campus tour dialog &amp; gazette</li>
+              </ul>
+              <p class="text-slate-500 pt-1">
+                <strong>Best For:</strong> Top-tier boarding prep academies, multi-campus independent schools, and established institutions.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Action CTAs -->
+        <div class="p-6 pt-0">
+          <a href="flagship-prep.html" 
+             class="block w-full py-4 rounded-xl bg-slate-950 hover:bg-amber-500 hover:text-slate-950 text-white text-center text-xs font-bold uppercase tracking-wider transition-colors shadow">
+            Open Flagship Prep Experience &rarr;
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Side-by-Side Comparison Matrix -->
+  <section id="matrix" class="max-w-7xl mx-auto px-6 lg:px-8 py-20">
+    <div class="text-center max-w-2xl mx-auto space-y-3 mb-12">
+      <span class="text-xs font-bold uppercase tracking-widest text-slate-500">Analytical Overview</span>
+      <h2 class="text-3xl font-extrabold text-slate-900">Side-by-Side Comparison Matrix</h2>
+      <p class="text-xs text-slate-600">
+        Review design languages, core palettes, typography hierarchies, and key interactive components.
+      </p>
+    </div>
+
+    <div class="bg-white rounded-3xl border border-slate-200 overflow-hidden shadow-sm">
+      <div class="overflow-x-auto">
+        <table class="w-full text-left text-xs text-slate-600">
+          <thead class="bg-slate-100/80 text-slate-900 uppercase font-bold text-[11px] tracking-wider border-b border-slate-200">
+            <tr>
+              <th class="p-4 sm:p-5">Design Concept</th>
+              <th class="p-4 sm:p-5">Visual Aesthetic</th>
+              <th class="p-4 sm:p-5">Typography</th>
+              <th class="p-4 sm:p-5">Color Palette</th>
+              <th class="p-4 sm:p-5">Target School Type</th>
+              <th class="p-4 sm:p-5 text-right">Action</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100 font-medium">
+            <tr class="hover:bg-slate-50/80 transition-colors">
+              <td class="p-4 sm:p-5 font-bold text-slate-900">
+                1. Swiss / Nordic Minimal
+              </td>
+              <td class="p-4 sm:p-5">Razor-sharp grid, architectural clarity</td>
+              <td class="p-4 sm:p-5 font-mono">Space Grotesk + Sans</td>
+              <td class="p-4 sm:p-5">Black, Cobalt Blue (#2563EB), White</td>
+              <td class="p-4 sm:p-5">Scandinavian &amp; IB World Schools</td>
+              <td class="p-4 sm:p-5 text-right">
+                <a href="variant-swiss-minimal.html" class="text-blue-600 hover:underline font-bold">Launch &rarr;</a>
+              </td>
+            </tr>
+
+            <tr class="hover:bg-slate-50/80 transition-colors">
+              <td class="p-4 sm:p-5 font-bold text-slate-900">
+                2. Warm Editorial Ivy
+              </td>
+              <td class="p-4 sm:p-5">Literary magazine layout, Harkness warmth</td>
+              <td class="p-4 sm:p-5 font-serif">Playfair Display + Sans</td>
+              <td class="p-4 sm:p-5">Racing Green (#163826), Alabaster, Bronze</td>
+              <td class="p-4 sm:p-5">New England &amp; British Prep Academies</td>
+              <td class="p-4 sm:p-5 text-right">
+                <a href="variant-editorial-ivy.html" class="text-[#163826] hover:underline font-bold">Launch &rarr;</a>
+              </td>
+            </tr>
+
+            <tr class="hover:bg-slate-50/80 transition-colors">
+              <td class="p-4 sm:p-5 font-bold text-slate-900">
+                3. Future STEAM Academy
+              </td>
+              <td class="p-4 sm:p-5">Sleek dark obsidian, modular metrics</td>
+              <td class="p-4 sm:p-5">Outfit + Sans</td>
+              <td class="p-4 sm:p-5">Obsidian (#090D16), Indigo, Cyber Cyan</td>
+              <td class="p-4 sm:p-5">Robotics &amp; Advanced Science Academies</td>
+              <td class="p-4 sm:p-5 text-right">
+                <a href="variant-future-steam.html" class="text-indigo-600 hover:underline font-bold">Launch &rarr;</a>
+              </td>
+            </tr>
+
+            <tr class="hover:bg-slate-50/80 transition-colors">
+              <td class="p-4 sm:p-5 font-bold text-slate-900">
+                4. Organic Zen &amp; Nature
+              </td>
+              <td class="p-4 sm:p-5">Soft organic curves, outdoor mindful calm</td>
+              <td class="p-4 sm:p-5 font-serif">Fraunces + Sans</td>
+              <td class="p-4 sm:p-5">Forest Sage (#264234), Sand Parchment</td>
+              <td class="p-4 sm:p-5">Forest &amp; Progressive Arts Schools</td>
+              <td class="p-4 sm:p-5 text-right">
+                <a href="variant-zen-nature.html" class="text-emerald-700 hover:underline font-bold">Launch &rarr;</a>
+              </td>
+            </tr>
+
+            <tr class="hover:bg-slate-50/80 transition-colors bg-amber-50/30">
+              <td class="p-4 sm:p-5 font-bold text-slate-900">
+                5. Flagship Prep Academy
+              </td>
+              <td class="p-4 sm:p-5">Collegiate Gothic, multi-page portals</td>
+              <td class="p-4 sm:p-5 font-serif">Cinzel + Cormorant Garamond</td>
+              <td class="p-4 sm:p-5">Collegiate Navy (#060d17), Leaf Gold, Cream</td>
+              <td class="p-4 sm:p-5">Elite Boarding &amp; Historic Prep Schools</td>
+              <td class="p-4 sm:p-5 text-right">
+                <a href="flagship-prep.html" class="text-amber-600 hover:underline font-bold">Launch &rarr;</a>
+              </td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </section>
+
+ 
+
+  <!-- Client Footer -->
+  <footer class="bg-white border-t border-slate-200 py-12">
+    <div class="max-w-7xl mx-auto px-6 lg:px-8 flex flex-col sm:flex-row items-center justify-between gap-6 text-xs text-slate-500">
+      <div class="flex items-center gap-2 font-medium">
+        <i data-lucide="layers" class="w-4 h-4 text-slate-700"></i>
+        <span>&copy; 2026 School Website Concepts Showcase Studio &bull; Built with Zero Dependencies</span>
+      </div>
+      <div class="flex items-center gap-6">
+        <a href="#variants" class="hover:text-slate-900">Back to Top &uarr;</a>
+        <a href="../doctor-clinic-demo/index.html" class="hover:text-slate-900">Visit Doctor Clinic Demo &rarr;</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="assets/js/variant-switcher.js"></script>
+  <script>
+    lucide.createIcons();
+
+    // Category Filter Tab Handler
+    const filterTabs = document.querySelectorAll('.filter-tab-btn');
+    const variantCards = document.querySelectorAll('.variant-card');
+
+    filterTabs.forEach(tab => {
+      tab.addEventListener('click', () => {
+        const cat = tab.getAttribute('data-filter-card');
+
+        filterTabs.forEach(t => {
+          t.classList.remove('bg-slate-900', 'text-white', 'active');
+          t.classList.add('bg-white', 'text-slate-600');
+        });
+        tab.classList.add('bg-slate-900', 'text-white', 'active');
+        tab.classList.remove('bg-white', 'text-slate-600');
+
+        variantCards.forEach(card => {
+          const cardCats = card.getAttribute('data-category');
+          if (cat === 'all' || cardCats.includes(cat)) {
+            card.style.display = 'flex';
+          } else {
+            card.style.display = 'none';
+          }
+        });
+      });
+    });
+  </script>
+</body>
+</html>

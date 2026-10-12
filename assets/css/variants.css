@@ -1,0 +1,43 @@
+/* ==========================================================================
+   School Website Variants - Design Tokens & Utilities
+   ========================================================================== */
+
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,600;0,9..144,700;1,9..144,400&family=Outfit:wght@300;400;500;600;700&display=swap');
+
+/* Variant 1: Swiss Minimal */
+.font-space {
+  font-family: 'Space Grotesk', sans-serif;
+}
+
+/* Variant 2: Editorial Ivy */
+.font-playfair {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Variant 4: Zen Organic */
+.font-fraunces {
+  font-family: 'Fraunces', serif;
+}
+
+/* Variant 3: Future STEAM */
+.font-outfit {
+  font-family: 'Outfit', sans-serif;
+}
+
+/* Smooth Image Transitions */
+.variant-img-card {
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+}
+.variant-img-card:hover {
+  transform: translateY(-4px);
+}
+
+/* Subtle Grid Borders */
+.swiss-border {
+  border-color: #e2e8f0;
+}
+
+/* Floating Switcher Bar */
+#variant-switcher-bar {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}

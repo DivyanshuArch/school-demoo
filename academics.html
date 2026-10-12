@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Academics &amp; Curriculum | Meridian Crest Academy</title>
+  <meta name="description" content="Explore our rigorous academic curriculum, IB Diploma Programme, Harkness seminar method, and endowed research institutes at Meridian Crest Academy.">
+  
+  <!-- Tailwind CSS CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy: {
+              950: '#060d17',
+              900: '#0b192e',
+              850: '#0f223f',
+              800: '#142c51',
+              700: '#1f3e6d',
+            },
+            gold: {
+              400: '#ebc853',
+              500: '#d8af3a',
+              600: '#b88f1d',
+            },
+            cream: {
+              50: '#fcfbf7',
+              100: '#f7f4ea',
+            }
+          },
+          fontFamily: {
+            serif: ['"Cormorant Garamond"', 'Georgia', 'serif'],
+            sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+            crest: ['"Cinzel"', 'serif'],
+          }
+        }
+      }
+    }
+  </script>
+
+  <!-- Google Fonts & Lucide Icons -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800&family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script src="https://unpkg.com/lucide@latest"></script>
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/custom.css">
+</head>
+<body class="bg-[#FAF8F5] text-slate-800 antialiased selection:bg-amber-500 selection:text-white">
+
+  <!-- Main Header & Navigation -->
+  <header id="main-header" class="sticky top-0 z-40 bg-navy-900/95 backdrop-blur-md border-b border-white/10 transition-all duration-300">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex items-center justify-between h-20 sm:h-24">
+        
+        <!-- School Crest & Brand -->
+        <a href="index.html" class="flex items-center gap-3.5 group">
+          <div class="w-12 h-12 rounded-full bg-gradient-to-br from-amber-400 to-amber-600 p-0.5 shadow-lg group-hover:scale-105 transition-transform">
+            <div class="w-full h-full bg-navy-950 rounded-full flex items-center justify-center border border-amber-400/40">
+              <i data-lucide="shield-alert" class="w-7 h-7 text-amber-400"></i>
+            </div>
+          </div>
+          <div>
+            <span class="block font-crest text-lg font-bold tracking-wider text-white uppercase group-hover:text-amber-300 transition-colors">
+              Meridian Crest
+            </span>
+            <span class="block text-[11px] text-amber-400/90 tracking-widest uppercase font-serif italic">
+              Academy &bull; Est. 1894
+            </span>
+          </div>
+        </a>
+
+        <!-- Desktop Navigation -->
+        <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-200">
+          <a href="index.html" class="hover:text-amber-300 transition-colors">Home</a>
+          <a href="academics.html" class="text-amber-400 font-semibold transition-colors">Academics</a>
+          <a href="admissions.html" class="hover:text-amber-300 transition-colors">Admissions</a>
+          <a href="index.html#campus-life" class="hover:text-amber-300 transition-colors">Campus Life</a>
+          <a href="index.html#headmaster" class="hover:text-amber-300 transition-colors">About Us</a>
+          <a href="index.html#news" class="hover:text-amber-300 transition-colors">News & Events</a>
+        </nav>
+
+        <!-- Action CTAs -->
+        <div class="hidden md:flex items-center gap-3">
+          <button data-open-inquiry class="px-4 py-2.5 rounded-full text-xs font-semibold uppercase tracking-wider text-amber-300 border border-amber-400/40 hover:bg-amber-400/10 transition-all">
+            Inquire Now
+          </button>
+          <a href="admissions.html" class="px-5 py-2.5 rounded-full text-xs font-bold uppercase tracking-wider bg-gradient-to-r from-amber-400 to-amber-500 hover:from-amber-300 hover:to-amber-400 text-navy-950 shadow-md transition-all">
+            Apply 2027
+          </a>
+        </div>
+
+        <!-- Mobile Menu Hamburger -->
+        <div class="flex md:hidden items-center gap-2">
+          <button data-open-inquiry class="px-3 py-1.5 rounded-full text-xs font-semibold text-amber-300 border border-amber-400/40">
+            Inquire
+          </button>
+          <button id="mobile-menu-btn" class="p-2 text-slate-300 hover:text-white rounded-lg" aria-label="Open menu">
+            <i data-lucide="menu" class="w-6 h-6"></i>
+          </button>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer -->
+  <div id="mobile-backdrop" class="fixed inset-0 bg-navy-950/70 z-50 hidden opacity-0 transition-opacity duration-300 backdrop-blur-sm"></div>
+  <div id="mobile-drawer" class="fixed top-0 right-0 w-80 max-w-[85vw] h-full bg-navy-950 text-white z-50 transform translate-x-full transition-transform duration-300 ease-in-out shadow-2xl flex flex-col p-6 border-l border-white/10">
+    <div class="flex items-center justify-between pb-6 border-b border-navy-800">
+      <div class="flex items-center gap-2.5">
+        <i data-lucide="shield" class="w-6 h-6 text-amber-400"></i>
+        <span class="font-crest font-bold text-sm uppercase text-amber-300">Meridian Crest</span>
+      </div>
+      <button id="close-mobile-menu" class="p-2 text-slate-400 hover:text-white rounded-lg" aria-label="Close menu">
+        <i data-lucide="x" class="w-6 h-6"></i>
+      </button>
+    </div>
+    
+    <nav class="flex flex-col gap-4 py-6 text-base font-medium">
+      <a href="index.html" class="text-slate-200 hover:text-amber-300 py-2">Home</a>
+      <a href="academics.html" class="text-amber-400 font-semibold py-2">Academics &amp; IB Diploma</a>
+      <a href="admissions.html" class="text-slate-200 hover:text-amber-300 py-2">Admissions &amp; Tuition</a>
+      <a href="index.html#campus-life" class="text-slate-200 hover:text-amber-300 py-2">Campus Experience</a>
+      <a href="index.html#headmaster" class="text-slate-200 hover:text-amber-300 py-2">Leadership &amp; Ethos</a>
+    </nav>
+
+    <div class="mt-auto pt-6 border-t border-navy-800 flex flex-col gap-3">
+      <button data-open-inquiry class="w-full py-3 rounded-xl text-center text-sm font-semibold text-amber-300 border border-amber-400/40">
+        Inquire for Admission
+      </button>
+      <a href="admissions.html" class="w-full py-3 rounded-xl text-center text-sm font-bold bg-amber-400 text-navy-950">
+        Apply Online
+      </a>
+    </div>
+  </div>
+
+  <!-- Academics Page Banner Hero -->
+  <section class="relative py-28 bg-navy-950 text-white overflow-hidden">
+    <div class="absolute inset-0 z-0">
+      <img src="https://images.unsplash.com/photo-1523050854058-8df90110c9f1?q=80&w=2070&auto=format&fit=crop" 
+           alt="Academic lecture hall and discussion" 
+           class="w-full h-full object-cover filter brightness-[0.35]">
+      <div class="absolute inset-0 bg-gradient-to-t from-navy-950 via-navy-950/70 to-transparent"></div>
+    </div>
+
+    <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <div class="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-amber-500/20 border border-amber-400/30 text-amber-300 text-xs font-semibold uppercase tracking-wider mb-6">
+        Curriculum of Distinction &bull; Grades 6–12 &amp; PG
+      </div>
+      <h1 class="text-4xl sm:text-6xl font-serif font-bold tracking-tight max-w-4xl mx-auto leading-tight">
+        The Architecture of Deep Inquiry
+      </h1>
+      <p class="text-slate-300 text-base sm:text-xl font-light max-w-2xl mx-auto mt-4 leading-relaxed">
+        We cultivate the discipline to dissect complex ideas, the courage to challenge orthodoxy, and the intellectual humility to learn from diverse viewpoints.
+      </p>
+      
+      <div class="mt-8 flex flex-wrap justify-center gap-4">
+        <a href="#ib" class="px-6 py-3 rounded-full bg-amber-400 hover:bg-amber-300 text-navy-950 font-bold text-xs uppercase tracking-wider transition-colors">
+          Explore IB Diploma
+        </a>
+        <a href="#departments" class="px-6 py-3 rounded-full bg-white/10 hover:bg-white/20 text-white font-semibold text-xs uppercase tracking-wider border border-white/20 transition-colors">
+          Browse Academic Departments
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- The Harkness Pedagogy Feature -->
+  <section class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid lg:grid-cols-12 gap-12 items-center">
+      
+      <div class="lg:col-span-6 space-y-6">
+        <span class="text-xs uppercase tracking-widest text-amber-600 font-semibold">Pedagogical Philosophy</span>
+        <h2 class="text-3xl sm:text-4xl font-serif font-bold text-navy-950 leading-tight">
+          No Rows. No Passive Lectures.<br>
+          <span class="italic font-normal text-amber-700">The Power of the Harkness Table.</span>
+        </h2>
+        <p class="text-slate-600 leading-relaxed text-base">
+          At Meridian Crest, classrooms are oval mahogany tables where 12 scholars and a master teacher sit as intellectual equals. Rather than reciting memorized facts, students lead discussions, cross-examine hypotheses, and learn to listen with ferocious empathy.
+        </p>
+
+        <div class="space-y-4 pt-2">
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0 font-bold">1</div>
+            <div>
+              <h4 class="font-serif font-bold text-navy-950 text-lg">Student-Led Socratic Dialectic</h4>
+              <p class="text-xs text-slate-600 mt-1">Students moderate arguments and interrogate primary source texts with scholarly rigor.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0 font-bold">2</div>
+            <div>
+              <h4 class="font-serif font-bold text-navy-950 text-lg">Confidence in Public Discourse</h4>
+              <p class="text-xs text-slate-600 mt-1">Every graduate leaves with the eloquence to present research before international congresses.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-10 h-10 rounded-xl bg-amber-100 text-amber-700 flex items-center justify-center shrink-0 font-bold">3</div>
+            <div>
+              <h4 class="font-serif font-bold text-navy-950 text-lg">Individual Faculty Mentorship</h4>
+              <p class="text-xs text-slate-600 mt-1">Faculty serve as mentors, thesis advisors, and house guides throughout all upper years.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="lg:col-span-6">
+        <div class="relative rounded-3xl overflow-hidden shadow-2xl border-4 border-white">
+          <img src="https://images.unsplash.com/photo-1577896851231-70ef18881754?q=80&w=1770&auto=format&fit=crop" 
+               alt="Students engaged at Harkness seminar table" 
+               class="w-full h-[460px] object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-navy-950/80 via-transparent to-transparent"></div>
+          <div class="absolute bottom-6 left-6 right-6 text-white">
+            <p class="text-xs uppercase tracking-widest text-amber-400 font-semibold">The Seminar Environment</p>
+            <p class="text-lg font-serif font-bold">"Learning to argue without being contentious, and listen without being compliant."</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- The International Baccalaureate & AP Capstone -->
+  <section id="ib" class="py-24 bg-navy-950 text-white">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      
+      <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+        <span class="text-xs uppercase tracking-widest text-amber-400 font-semibold">Pre-Collegiate Standard</span>
+        <h2 class="text-3xl sm:text-5xl font-serif font-bold text-white">
+          The International Baccalaureate (IB) Diploma
+        </h2>
+        <p class="text-slate-400 text-base">
+          Meridian Crest Academy has been an authorized IB World School since 1988. Our graduates earn university course credits and admissions preference at top-tier universities worldwide.
+        </p>
+      </div>
+
+      <!-- Core Trinity Grid -->
+      <div class="grid md:grid-cols-3 gap-8">
+        
+        <div class="bg-navy-900/80 rounded-3xl p-8 border border-white/10 relative overflow-hidden">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center mb-6">
+            <i data-lucide="file-text" class="w-6 h-6"></i>
+          </div>
+          <span class="text-xs uppercase tracking-wider text-amber-400 font-bold">Core Pillar I</span>
+          <h3 class="text-2xl font-serif font-bold text-white mt-1">The Extended Essay (EE)</h3>
+          <p class="text-xs sm:text-sm text-slate-300 mt-3 leading-relaxed">
+            A 4,000-word independent academic investigation in a discipline of the student's choosing, guided by a faculty advisor and modeled on peer-reviewed collegiate papers.
+          </p>
+          <div class="mt-6 pt-4 border-t border-white/10 text-xs text-slate-400">
+            Recent topics: <em>CRISPR-Cas9 Ethics</em>, <em>Post-Colonial African Poetry</em>, <em>Quantum Cryptography Algorithms</em>.
+          </div>
+        </div>
+
+        <div class="bg-navy-900/80 rounded-3xl p-8 border border-white/10 relative overflow-hidden">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center mb-6">
+            <i data-lucide="brain" class="w-6 h-6"></i>
+          </div>
+          <span class="text-xs uppercase tracking-wider text-amber-400 font-bold">Core Pillar II</span>
+          <h3 class="text-2xl font-serif font-bold text-white mt-1">Theory of Knowledge (TOK)</h3>
+          <p class="text-xs sm:text-sm text-slate-300 mt-3 leading-relaxed">
+            An epistemological exploration analyzing how we know what we claim to know across mathematics, human sciences, history, ethics, and indigenous knowledge systems.
+          </p>
+          <div class="mt-6 pt-4 border-t border-white/10 text-xs text-slate-400">
+            Culminates in an exhibition and philosophical essay evaluated by international external moderators.
+          </div>
+        </div>
+
+        <div class="bg-navy-900/80 rounded-3xl p-8 border border-white/10 relative overflow-hidden">
+          <div class="w-12 h-12 rounded-2xl bg-amber-500/20 text-amber-400 flex items-center justify-center mb-6">
+            <i data-lucide="heart" class="w-6 h-6"></i>
+          </div>
+          <span class="text-xs uppercase tracking-wider text-amber-400 font-bold">Core Pillar III</span>
+          <h3 class="text-2xl font-serif font-bold text-white mt-1">Creativity, Activity, Service</h3>
+          <p class="text-xs sm:text-sm text-slate-300 mt-3 leading-relaxed">
+            Grounding intellectual pursuit in civic responsibility. Students conduct 150+ hours of sustained community partnerships, artistic projects, and athletic expeditions.
+          </p>
+          <div class="mt-6 pt-4 border-t border-white/10 text-xs text-slate-400">
+            Includes annual service missions across Costa Rica, Kenya, and local Appalachian community centers.
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Department & Curriculum Accordions -->
+  <section id="departments" class="py-24 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+      <span class="text-xs uppercase tracking-widest text-amber-600 font-semibold">Course Catalogue</span>
+      <h2 class="text-3xl sm:text-5xl font-serif font-bold text-navy-950">
+        Academic Departments
+      </h2>
+      <p class="text-slate-600 text-base">
+        Select a department below to explore subject offerings, honors tracks, and advanced university-level seminars.
+      </p>
+    </div>
+
+    <div class="max-w-4xl mx-auto space-y-4 accordion-group">
+      
+      <!-- Dept 1 -->
+      <div class="accordion-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm active">
+        <button class="accordion-header w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-xl bg-navy-950 text-amber-400 flex items-center justify-center shrink-0">
+              <i data-lucide="book" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h4 class="font-serif font-bold text-navy-950 text-xl">Humanities, Classics &amp; Philosophy</h4>
+              <p class="text-xs text-slate-500">World Literature, Ancient Greek, Latin IV, Political Theory, US &amp; Global History</p>
+            </div>
+          </div>
+          <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-slate-400 transition-transform"></i>
+        </button>
+        <div class="accordion-content px-6 pb-6 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+          Students study seminal works from Homer and Shakespeare to modern post-colonial literature. Advanced options include <em>IB English A: Literature HL</em>, <em>Philosophy of Law</em>, and <em>Seminar in Geopolitics</em>. All courses emphasize essay composition, critical textual analysis, and oral defense.
+        </div>
+      </div>
+
+      <!-- Dept 2 -->
+      <div class="accordion-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+        <button class="accordion-header w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-xl bg-navy-950 text-amber-400 flex items-center justify-center shrink-0">
+              <i data-lucide="calculator" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h4 class="font-serif font-bold text-navy-950 text-xl">Mathematics &amp; Quantitative Inquiry</h4>
+              <p class="text-xs text-slate-500">Multivariable Calculus, Linear Algebra, Discrete Math, IB Math Analysis HL</p>
+            </div>
+          </div>
+          <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-slate-400 transition-transform"></i>
+        </button>
+        <div class="accordion-content px-6 pb-6 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+          Our mathematics faculty emphasizes theoretical proof alongside computational applications. Advanced students frequently matriculate directly into sophomore university calculus, having mastered differential equations and group theory.
+        </div>
+      </div>
+
+      <!-- Dept 3 -->
+      <div id="stem" class="accordion-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+        <button class="accordion-header w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-xl bg-navy-950 text-amber-400 flex items-center justify-center shrink-0">
+              <i data-lucide="flask-conical" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h4 class="font-serif font-bold text-navy-950 text-xl">Natural Sciences &amp; Biotechnology</h4>
+              <p class="text-xs text-slate-500">Advanced Biology HL, Organic Chemistry, Quantum Physics, Molecular Genetics</p>
+            </div>
+          </div>
+          <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-slate-400 transition-transform"></i>
+        </button>
+        <div class="accordion-content px-6 pb-6 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+          Hosted in the Newton Science Pavilion with university-grade fume hoods, mass spectrometers, and tissue culture incubators. Laboratory coursework is entirely open-inquiry, requiring students to design experiments rather than follow pre-scripted manual steps.
+        </div>
+      </div>
+
+      <!-- Dept 4 -->
+      <div class="accordion-item bg-white rounded-2xl border border-slate-200 overflow-hidden shadow-sm">
+        <button class="accordion-header w-full p-6 text-left flex items-center justify-between hover:bg-slate-50 transition-colors">
+          <div class="flex items-center gap-4">
+            <div class="w-10 h-10 rounded-xl bg-navy-950 text-amber-400 flex items-center justify-center shrink-0">
+              <i data-lucide="globe" class="w-5 h-5"></i>
+            </div>
+            <div>
+              <h4 class="font-serif font-bold text-navy-950 text-xl">Modern Languages &amp; Global Cultures</h4>
+              <p class="text-xs text-slate-500">French B HL, Mandarin Chinese, Spanish Literature, German, Arabic Studies</p>
+            </div>
+          </div>
+          <i data-lucide="chevron-down" class="accordion-icon w-5 h-5 text-slate-400 transition-transform"></i>
+        </button>
+        <div class="accordion-content px-6 pb-6 text-sm text-slate-600 leading-relaxed border-t border-slate-100 pt-4">
+          Immersion-based instruction with native speaker faculty and reciprocal exchange programs with partner academies in Paris, Beijing, Madrid, and Tokyo. Over 85% of graduates achieve fluency certification.
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- CTA Box -->
+  <section class="py-20 bg-cream-100 border-t border-slate-200">
+    <div class="max-w-4xl mx-auto px-4 sm:px-6 text-center space-y-6">
+      <h3 class="text-3xl font-serif font-bold text-navy-950">Download the Full 2027–2028 Academic Catalogue</h3>
+      <p class="text-slate-600 text-sm max-w-xl mx-auto">
+        Review all 130+ course descriptions, grading distributions, matriculation data, and diploma graduation requirements.
+      </p>
+      <div class="flex justify-center gap-4 pt-2">
+        <button data-download-prospectus class="px-8 py-3.5 rounded-full bg-navy-950 hover:bg-navy-900 text-amber-400 font-bold text-xs uppercase tracking-wider shadow">
+          Download Curriculum PDF (3.2 MB)
+        </button>
+        <button data-open-inquiry class="px-8 py-3.5 rounded-full bg-white hover:bg-slate-50 text-navy-950 font-bold text-xs uppercase tracking-wider border border-slate-300">
+          Inquire with Dean of Studies
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Reusable Footer -->
+  <footer class="bg-navy-950 text-white border-t border-navy-800 py-12">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center sm:flex sm:justify-between sm:items-center">
+      <div class="flex items-center justify-center gap-2 mb-4 sm:mb-0">
+        <i data-lucide="shield" class="w-5 h-5 text-amber-400"></i>
+        <span class="font-crest font-bold text-sm tracking-wider uppercase text-white">Meridian Crest Academy</span>
+      </div>
+      <p class="text-xs text-slate-400">&copy; 2026 Meridian Crest Academy. Dedicated to Academic Excellence &amp; Character.</p>
+      <div class="mt-4 sm:mt-0 flex justify-center gap-6 text-xs text-amber-400">
+        <a href="index.html" class="hover:underline">Home</a>
+        <a href="admissions.html" class="hover:underline">Admissions</a>
+        <a href="index.html#campus-life" class="hover:underline">Campus Life</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Reusable Modals Included -->
+  <div id="inquiry-modal" class="modal-overlay fixed inset-0 z-50 flex items-center justify-center p-4 bg-navy-950/80 backdrop-blur-md">
+    <div class="modal-content bg-white w-full max-w-xl rounded-3xl shadow-2xl overflow-hidden border border-slate-200">
+      <div class="bg-navy-950 p-6 text-white flex items-center justify-between border-b border-navy-800">
+        <div>
+          <span class="text-xs uppercase tracking-widest text-amber-400 font-semibold">Admissions Office</span>
+          <h3 class="text-xl font-serif font-bold mt-1">Inquire for Academic Year 2027–2028</h3>
+        </div>
+        <button data-close-modal class="text-slate-400 hover:text-white p-2 rounded-lg"><i data-lucide="x" class="w-5 h-5"></i></button>
+      </div>
+      <form id="inquiry-form" class="p-6 space-y-4">
+        <div>
+          <label class="block text-xs font-bold text-navy-950 uppercase mb-1">Parent Name</label>
+          <input type="text" required placeholder="Parent / Guardian" class="w-full px-4 py-2 rounded-xl border border-slate-300 text-sm">
+        </div>
+        <div>
+          <label class="block text-xs font-bold text-navy-950 uppercase mb-1">Email</label>
+          <input type="email" required placeholder="name@example.com" class="w-full px-4 py-2 rounded-xl border border-slate-300 text-sm">
+        </div>
+        <div class="flex justify-end gap-3 pt-2">
+          <button type="button" data-close-modal class="px-4 py-2 text-xs font-bold text-slate-600">Cancel</button>
+          <button type="submit" class="px-6 py-2 rounded-xl bg-navy-950 text-amber-400 text-xs font-bold uppercase">Submit Inquiry</button>
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <script src="assets/js/modal.js"></script>
+  <script src="assets/js/main.js"></script>
+  <script>lucide.createIcons();</script>
+</body>
+</html>
